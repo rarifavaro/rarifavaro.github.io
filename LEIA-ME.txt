@@ -1,0 +1,28 @@
+COMO SUBSTITUIR O SITE NO GITHUB
+
+Repositório correto:
+https://github.com/rarifavaro/rarifavaro.github.io
+
+1. Abra o repositório acima e entre na aba Code.
+2. Clique em Add file e depois em Upload files.
+3. Arraste estes quatro arquivos para a tela:
+   - index.html
+   - style.css
+   - script.js
+   - favicon.svg
+4. O GitHub avisará que index.html já existe. Confirme a substituição.
+5. Em Commit changes, escreva:
+   Novo Mapa Sagrado Numerológico
+6. Marque Commit directly to the main branch.
+7. Clique no botão verde Commit changes.
+8. Aguarde de 1 a 3 minutos e abra:
+   https://rarifavaro.github.io/
+
+O arquivo LEIA-ME.txt não precisa ser enviado ao GitHub. Ele é somente o seu guia.
+
+IMPORTANTE
+
+- Não altere os nomes dos quatro arquivos.
+- O WhatsApp configurado é 21 97500-3419.
+- O cálculo usa a tabela cabalística de 1 a 8 e examina todas as linhas da Pirâmide.
+- O site funciona sem servidor e sem armazenar as respostas do consulente.
