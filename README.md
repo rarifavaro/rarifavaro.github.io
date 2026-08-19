@@ -1,7 +1,23 @@
-# Portal da Consciência
+# Site Rarí Fávaro — versão focada em venda
 
-Entrada oficial para o site de Rari Favaro.
+Fluxo principal:
+TikTok Live → escolher 1/2/3 perguntas → copiar PIX → WhatsApp → serviços pagos.
 
-Site principal: https://portal-consciencia.rariiiiifavaro.chatgpt.site
+PIX: (21) 97500-3419
+WhatsApp: (21) 97500-3419
 
-O arquivo `index.html` direciona o endereço `rarifavaro.github.io` para a versão atual do Portal da Consciência.
+Esta versão NÃO possui mini mapa gratuito.
+
+Páginas:
+- index.html
+- tarot.html
+- numerologia.html
+- reiki.html
+- mesa.html
+
+Os preços explícitos da live são:
+- 1 pergunta R$10
+- 2 perguntas R$15
+- 3 perguntas R$22
+
+As páginas de serviços particulares estão estruturadas para contratação via WhatsApp.
