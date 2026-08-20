@@ -1,4 +1,3 @@
-
 const PIX = "21975003419";
 const WHATSAPP = "5521975003419";
 let selected = null;
@@ -18,17 +17,21 @@ priceButtons.forEach(btn => {
   });
 });
 
-document.getElementById("copyPix").addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText(PIX);
-    toast("PIX copiado: (21) 97500-3419");
-  } catch(e) {
-    toast("PIX: (21) 97500-3419");
-  }
-});
+const copyPix = document.getElementById("copyPix");
+if (copyPix) {
+  copyPix.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(PIX);
+      toast("PIX copiado: (21) 97500-3419");
+    } catch(e) {
+      toast("PIX: (21) 97500-3419");
+    }
+  });
+}
 
 function toast(msg){
   const el = document.getElementById("toast");
+  if (!el) return;
   el.textContent = msg;
   el.classList.add("show");
   setTimeout(()=>el.classList.remove("show"),2200);

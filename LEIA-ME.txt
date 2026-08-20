@@ -1,28 +1,19 @@
-COMO SUBSTITUIR O SITE NO GITHUB
+RARÍ FÁVARO — SITE V2
 
-Repositório correto:
-https://github.com/rarifavaro/rarifavaro.github.io
-
-1. Abra o repositório acima e entre na aba Code.
-2. Clique em Add file e depois em Upload files.
-3. Arraste estes quatro arquivos para a tela:
-   - index.html
-   - style.css
-   - script.js
-   - favicon.svg
-4. O GitHub avisará que index.html já existe. Confirme a substituição.
-5. Em Commit changes, escreva:
-   Novo Mapa Sagrado Numerológico
-6. Marque Commit directly to the main branch.
-7. Clique no botão verde Commit changes.
-8. Aguarde de 1 a 3 minutos e abra:
-   https://rarifavaro.github.io/
-
-O arquivo LEIA-ME.txt não precisa ser enviado ao GitHub. Ele é somente o seu guia.
+Arquivos deste pacote:
+- index.html → nova home
+- style.css → novo visual responsivo/mobile
+- metodo.html → página do Método Rarí
+- script.js → mantém PIX e botões da live
 
 IMPORTANTE
+1. NÃO apague sua foto atual rari-hero.jpg do repositório.
+   A nova home usa exatamente esse arquivo para preservar sua foto real.
+2. Também mantenha tarot.html e numerologia.html, porque os novos cards apontam para essas páginas.
+3. Antes de substituir, salve uma cópia dos arquivos atuais.
+4. Ainda NÃO coloquei CNAME. Primeiro configure o DNS do domínio rarifavaro.com.br e depois conecte o domínio no GitHub Pages.
+5. Os botões dos livros/e-books vão para o WhatsApp por enquanto, porque os links individuais de compra não foram fornecidos.
+6. O botão Sementes já usa o convite:
+   https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&p=i&mlu=4&amv=1
 
-- Não altere os nomes dos quatro arquivos.
-- O WhatsApp configurado é 21 97500-3419.
-- O cálculo usa a tabela cabalística de 1 a 8 e examina todas as linhas da Pirâmide.
-- O site funciona sem servidor e sem armazenar as respostas do consulente.
+LIVE: 21h

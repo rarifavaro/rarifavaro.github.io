@@ -3,43 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123f38">
-  <meta name="description" content="Tarot e atendimentos com Rarí Fávaro. Valores da live, PIX, WhatsApp e serviços em um só lugar.">
-  <title>Rarí Fávaro | Tarot</title>
+  <meta name="theme-color" content="#153f36">
+  <meta name="description" content="Rarí Fávaro — Tarot, Mapa Cabalístico e Método Rarí. Consciência, simbolismo e transformação.">
+  <title>Rarí Fávaro | Consciência • Simbolismo • Transformação</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="extras.css">
 </head>
 <body>
+
 <header class="top">
-  <a href="#inicio" class="logo">
+  <a class="brand" href="#inicio">
     <span class="sigil">✦</span>
-    <span><strong>Rarí Fávaro</strong><small>Tarot & atendimentos</small></span>
+    <span>
+      <strong>Rarí Fávaro</strong>
+      <small>Consciência • Simbolismo • Transformação</small>
+    </span>
   </a>
-  <a href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20pelo%20seu%20site." class="top-whats" target="_blank">WhatsApp</a>
+  <a class="top-whats" target="_blank"
+     href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20pelo%20seu%20site.">WhatsApp</a>
 </header>
 
 <main id="inicio">
+
 <section class="hero wrap">
   <div class="hero-copy">
-    <span class="kicker">Tarot sem enrolação</span>
+    <span class="kicker">Chegou da live?</span>
     <h1>Você pergunta.<br>Eu abro o jogo.</h1>
-    <p>Chegou da live? Bora direto ao ponto. Escolhe sua pergunta, faz o PIX e me chama no WhatsApp. Eu cuido do resto.</p>
+    <p>Escolhe sua pergunta, faz o PIX e me chama no WhatsApp. Na live eu vou direto no ponto. Se a sua história pedir mais profundidade, existe um caminho inteiro depois daqui.</p>
     <div class="hero-buttons">
       <a href="#live" class="btn primary">Tô na live agora</a>
-      <a href="#servicos" class="btn light">Quero ver os atendimentos</a>
+      <a href="#ecossistema" class="btn light">Quero conhecer o ecossistema</a>
     </div>
     <div class="tiny-row">
-      <span>✦ Sem exposição</span><span>✦ Direto ao ponto</span><span>✦ Leitura de verdade</span>
+      <span>✦ Clareza</span>
+      <span>✦ Profundidade</span>
+      <span>✦ Sem exposição</span>
     </div>
   </div>
 
   <div class="portrait-wrap">
     <div class="orbit"></div>
     <img src="rari-hero.jpg" alt="Rarí Fávaro">
-    <div class="live-bubble"><b>● LIVE</b><span>Todo dia • 21h</span></div>
+    <div class="live-bubble">
+      <b>● LIVE</b>
+      <span>Todo dia • 21h</span>
+    </div>
   </div>
 </section>
 
@@ -55,91 +65,216 @@
 
     <div class="prices">
       <button class="price" data-value="10" data-label="1 pergunta">
-        <span>1 pergunta</span><strong><small>R$</small>10</strong>
+        <span>1 pergunta</span>
+        <strong><small>R$</small>10</strong>
       </button>
+
       <button class="price featured" data-value="15" data-label="2 perguntas">
-        <i>mais escolhido</i><span>2 perguntas</span><strong><small>R$</small>15</strong>
+        <i>mais escolhido</i>
+        <span>2 perguntas</span>
+        <strong><small>R$</small>15</strong>
       </button>
+
       <button class="price" data-value="22" data-label="3 perguntas">
-        <span>3 perguntas</span><strong><small>R$</small>22</strong>
+        <span>3 perguntas</span>
+        <strong><small>R$</small>22</strong>
       </button>
     </div>
 
     <div class="payment-box">
       <div class="selected" id="selectedText">Escolhe uma opção acima</div>
-      <button class="pay-btn" id="copyPix"><b>◇ COPIAR PIX</b><span>(21) 97500-3419</span></button>
-      <a class="paid-btn" id="paidWhatsapp" target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20da%20live%20e%20j%C3%A1%20fiz%20o%20PIX.%20Vou%20enviar%20o%20comprovante."><b>✓ JÁ PAGUEI</b><span>Enviar comprovante no WhatsApp</span></a>
+      <button class="pay-btn" id="copyPix">
+        <b>◇ COPIAR PIX</b>
+        <span>(21) 97500-3419</span>
+      </button>
+      <a class="paid-btn" id="paidWhatsapp" target="_blank"
+         href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20da%20live%20e%20j%C3%A1%20fiz%20o%20PIX.%20Vou%20enviar%20o%20comprovante.">
+        <b>✓ JÁ PAGUEI</b>
+        <span>Enviar comprovante no WhatsApp</span>
+      </a>
     </div>
 
-    <p class="live-note">Gratuita acontece quando eu abrir na live. Patrocinada é prioridade. Quer garantir sua leitura? Escolhe acima e bora.</p>
+    <p class="live-note">Pergunta gratuita acontece quando eu abrir na live. Patrocinada é prioridade.</p>
   </div>
 </section>
 
-<section class="conversion wrap">
-  <span class="kicker">Quer ir além de uma pergunta?</span>
-  <h2>Bora aprofundar de verdade.</h2>
-  <p class="intro">Na live eu vou direto no ponto. No particular, a gente abre a história inteira, olha contexto, padrão, movimento e o que precisa ser visto.</p>
+<section class="bridge">
+  <div class="wrap bridge-inner">
+    <span class="bridge-symbol">⌁</span>
+    <div>
+      <span class="kicker">Depois da resposta</span>
+      <h2>Uma pergunta pode abrir uma porta.<br>Algumas histórias pedem profundidade.</h2>
+      <p>Às vezes o Tarot responde o agora. Às vezes ele revela que existe um padrão maior pedindo consciência, estrutura e transformação.</p>
+    </div>
+  </div>
+</section>
 
-  <div class="service-cards" id="servicos">
-    <a class="service-card" href="tarot.html">
-      <img class="service-image" src="tarot-servico.jpg" alt="Cartas de Tarot">
-      <small>Tarot particular</small>
+<section class="ecosystem wrap" id="ecossistema">
+  <div class="section-title">
+    <span class="kicker">Meu ecossistema</span>
+    <h2>Três caminhos.<br>Uma mesma travessia.</h2>
+    <p>Você não precisa começar pelo lugar “certo”. Começa pelo lugar que está te chamando agora.</p>
+  </div>
+
+  <div class="ecosystem-grid">
+
+    <a class="eco-card tarot-card" href="tarot.html">
+      <div class="eco-number">01</div>
+      <span class="eco-icon">✦</span>
+      <small>Leitura simbólica</small>
       <h3>Tarot</h3>
-      <p>Amor, trabalho, decisões, caminhos e aquelas situações que ficam martelando na cabeça.</p>
-      <b>Quero minha leitura →</b>
+      <p>Para quando você precisa de clareza sobre uma situação, uma relação, uma decisão ou um caminho que está se movendo agora.</p>
+      <b>Quero abrir o jogo →</b>
     </a>
 
-    <a class="service-card sand" href="numerologia.html">
-      <img class="service-image" src="numerologia-servico.jpg" alt="Numerologia Cabalística">
+    <a class="eco-card map-card" href="numerologia.html">
+      <div class="eco-number">02</div>
+      <span class="eco-icon">△</span>
       <small>Numerologia Cabalística</small>
-      <h3>Mapa Numerológico</h3>
-      <p>Seu nome, seus números, seus padrões e o que eles estão mostrando sobre sua vida agora.</p>
+      <h3>Mapa Cabalístico</h3>
+      <p>Nome, números, ciclos, padrões, potenciais, sombras e a arquitetura simbólica que atravessa a sua história.</p>
       <b>Quero conhecer meu mapa →</b>
     </a>
 
-    <a class="service-card dark" href="reiki.html">
-      <img class="service-image" src="reiki-servico.jpg" alt="Reiki">
-      <small>Reiki</small>
-      <h3>Reiki</h3>
-      <p>Pra quando seu campo pede pausa, reorganização e um cuidado mais profundo.</p>
-      <b>Quero saber como funciona →</b>
+    <a class="eco-card method-card" href="metodo.html">
+      <div class="eco-number">03</div>
+      <span class="eco-icon">◉</span>
+      <small>Metodologia autoral</small>
+      <h3>Método Rarí</h3>
+      <p>Um processo de transmutação energética, investigação de padrões, ativação consciente e integração espiritual.</p>
+      <b>Quero entrar na jornada →</b>
     </a>
 
-    <a class="service-card clay" href="mesa.html">
-      <img class="service-image" src="mesa-servico.jpg" alt="Mesa Radiônica">
-      <small>Mesa Radiônica</small>
-      <h3>Mesa Radiônica</h3>
-      <p>Pra investigar padrões energéticos, limpar excessos e trabalhar o que está travando seu fluxo.</p>
-      <b>Quero saber como funciona →</b>
-    </a>
   </div>
 </section>
 
-<section class="why">
-  <div class="wrap why-grid">
-    <div>
-      <span class="kicker pale">Como eu trabalho</span>
-      <h2>Nada de resposta<br>que não diz nada.</h2>
+<section class="method-preview">
+  <div class="wrap method-grid">
+
+    <div class="method-copy">
+      <span class="kicker pale">Método autoral</span>
+      <h2>Método Rarí</h2>
+      <p class="method-sub">Transmutação Energética • Ativação Quântica • Estrutura Espiritual</p>
+      <p>Eu não trato cada ferramenta como um serviço separado. Radiestesia, Mesa Radiônica, Reiki e recursos de investigação de crenças entram como instrumentos dentro de um processo maior.</p>
+      <p class="quantum-note"><strong>Ativação Quântica</strong> é uma linguagem espiritual e simbólica do método para potencialidade, mudança de estado e novas escolhas. Não é apresentada como física ou tratamento médico.</p>
+      <a class="btn terracotta" href="metodo.html">Conhecer o método</a>
     </div>
-    <div class="why-copy">
-      <p>Eu separo sentimento de intenção, vontade de atitude e desejo de movimento. Não adianta falar bonito e não responder. Minha leitura precisa chegar no centro da sua pergunta.</p>
-      <a href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20agendar%20um%20atendimento." target="_blank" class="btn terracotta">Bora conversar</a>
+
+    <div class="method-steps">
+      <article><span>01</span><div><b>Ler o campo</b><p>Perceber onde a energia e a consciência estão pedindo atenção.</p></div></article>
+      <article><span>02</span><div><b>Encontrar a raiz</b><p>Investigar crenças, emoções, vínculos e padrões que sustentam a questão.</p></div></article>
+      <article><span>03</span><div><b>Transmutar</b><p>Trabalhar limpeza, liberação, reorganização e mudança de padrão.</p></div></article>
+      <article><span>04</span><div><b>Ativar</b><p>Dar direção ao espaço aberto e sustentar uma nova configuração interna.</p></div></article>
+      <article><span>05</span><div><b>Integrar</b><p>Assentar o processo no corpo, na presença e nas escolhas do cotidiano.</p></div></article>
+    </div>
+
+  </div>
+</section>
+
+<section class="library wrap" id="biblioteca">
+  <div class="section-title library-head">
+    <span class="kicker">Biblioteca</span>
+    <h2>Palavras para continuar<br>a jornada fora da sessão.</h2>
+    <p>Livros e e-books para aprofundar consciência, símbolos, padrões e escolhas.</p>
+  </div>
+
+  <div class="books-grid">
+
+    <article class="book-card">
+      <div class="book-cover archetypes">
+        <span>Rarí Fávaro</span>
+        <strong>ARQUÉTIPOS</strong>
+        <em>O Código Oculto da Alma</em>
+        <div class="book-mark">✦</div>
+      </div>
+      <div class="book-info">
+        <small>E-book</small>
+        <h3>Arquétipos</h3>
+        <p>Um mergulho simbólico nos padrões que atravessam identidade, escolhas e percepção.</p>
+        <a target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20saber%20mais%20sobre%20o%20e-book%20Arqu%C3%A9tipos.">Quero conhecer →</a>
+      </div>
+    </article>
+
+    <article class="book-card">
+      <div class="book-cover conscience">
+        <span>Rarí Fávaro</span>
+        <strong>CONSCIÊNCIA</strong>
+        <em>PADRÕES • ESCOLHA</em>
+        <div class="book-mark">◉</div>
+      </div>
+      <div class="book-info">
+        <small>Livro</small>
+        <h3>Consciência, Padrões, Escolha</h3>
+        <p>Uma investigação sobre aquilo que repetimos, aquilo que percebemos e aquilo que podemos escolher transformar.</p>
+        <a target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20saber%20mais%20sobre%20o%20livro%20Consci%C3%AAncia%2C%20Padr%C3%B5es%2C%20Escolha.">Quero conhecer →</a>
+      </div>
+    </article>
+
+    <article class="book-card coming">
+      <div class="book-cover invisible">
+        <span>Biblioteca da Consciência</span>
+        <strong>OS PADRÕES<br>INVISÍVEIS</strong>
+        <em>Volume I</em>
+        <div class="book-mark">⌁</div>
+      </div>
+      <div class="book-info">
+        <small>Em construção</small>
+        <h3>Biblioteca da Consciência</h3>
+        <p>Novos volumes curtos e profundos para acompanhar sua própria investigação.</p>
+        <span class="soon">Em breve</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="seeds" id="sementes">
+  <div class="wrap seeds-grid">
+    <div class="seeds-symbol">🌱</div>
+    <div class="seeds-copy">
+      <span class="kicker pale">Comunidade</span>
+      <h2>Sementes</h2>
+      <p>Um espaço no WhatsApp para permanecer perto, receber avisos, conteúdos, encontros e práticas coletivas. Nem toda jornada precisa acontecer sozinho.</p>
+      <a class="btn seed-btn" target="_blank"
+         href="https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&p=i&mlu=4&amv=1">Entrar no grupo Sementes</a>
     </div>
   </div>
 </section>
+
+<section class="about wrap" id="sobre">
+  <div class="about-photo">
+    <img src="rari-hero.jpg" alt="Rarí Fávaro">
+  </div>
+  <div class="about-copy">
+    <span class="kicker">Sobre mim</span>
+    <h2>Eu trabalho com símbolos,<br>energia e consciência.</h2>
+    <p>Meu trabalho nasce do encontro entre Tarot, Numerologia Cabalística, práticas energéticas e investigação da consciência. Não para colocar sua vida numa caixa, mas para tornar visíveis padrões, escolhas e movimentos que talvez estejam acontecendo no escuro.</p>
+    <p>Tarot, Mapa e Método são caminhos diferentes dentro do mesmo ecossistema: compreender, atravessar e integrar.</p>
+    <div class="about-links">
+      <a target="_blank" href="https://wa.me/5521975003419">WhatsApp</a>
+      <a target="_blank" href="https://instagram.com/rarifavaro.co">@rarifavaro.co</a>
+      <a target="_blank" href="https://www.tiktok.com/@rarifavaro">TikTok</a>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <div class="wrap foot">
-    <div><strong>Rarí Fávaro</strong><span>Tarot • Numerologia • Reiki • Mesa Radiônica</span></div>
-    <a href="https://wa.me/5521975003419" target="_blank">WhatsApp</a>
-    <span>@rarifavaro</span>
+    <div>
+      <strong>Rarí Fávaro</strong>
+      <span>Consciência • Simbolismo • Transformação</span>
+    </div>
+    <div class="foot-center">rarifavaro.com.br</div>
+    <a target="_blank" href="https://wa.me/5521975003419">WhatsApp</a>
   </div>
 </footer>
 
 <div class="mobile-bar">
   <a href="#live">🎴 Live</a>
-  <a href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20pelo%20site." target="_blank">✆ WhatsApp</a>
+  <a target="_blank" href="https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&p=i&mlu=4&amv=1">🌱 Sementes</a>
+  <a target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20pelo%20site.">✆ WhatsApp</a>
 </div>
 
 <div class="toast" id="toast"></div>
