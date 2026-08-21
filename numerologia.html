@@ -1,13 +1,830 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mapa Numerológico | Rarí Fávaro</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="extras.css"><style>
-.detail{min-height:100vh;padding:70px 0 100px}.back{font-size:12px;font-weight:800;color:#c96942}.detail-card{margin-top:30px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:42px;box-shadow:var(--shadow)}.detail h1{font-size:clamp(58px,8vw,88px)}.detail p{font-size:17px;line-height:1.7;color:#5c6e69}.detail ul{list-style:none;padding:0;margin:28px 0}.detail li{padding:12px 0;border-bottom:1px solid var(--line);font-weight:600}.detail-side{background:var(--green);color:white;border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:center}.detail-side h3{color:white;font-size:42px}.detail-side p{color:rgba(255,255,255,.7);font-size:14px}.service-price{font-family:"Cormorant Garamond",serif;font-size:38px;margin:16px 0 4px;color:white}@media(max-width:760px){.detail-card{grid-template-columns:1fr;padding:24px}}
-.detail-image{width:100%;height:210px;object-fit:cover;border-radius:16px;margin-bottom:24px} </style></head><body>
-<header class="top"><a href="index.html" class="logo"><span class="sigil">✦</span><span><strong>Rarí Fávaro</strong><small>Tarot & atendimentos</small></span></a><a href="https://wa.me/5521975003419" class="top-whats">WhatsApp</a></header>
-<main class="detail"><div class="wrap"><a class="back" href="index.html">← VOLTAR PARA O INÍCIO</a>
-<div class="detail-card"><div><span class="kicker">Numerologia Cabalística</span><h1>Mapa Numerológico</h1><p>Seu nome não está ali por acaso dentro da Numerologia Cabalística. O mapa organiza seus números para mostrar padrões, potenciais, desafios e pontos que estão pedindo atenção.</p><ul><li>Núcleo numerológico</li><li>Padrões que se repetem e potenciais que você pode usar</li><li>Desafios, tendências e direção</li><li>Energia e leitura do nome</li><li>Tudo aplicado à sua história</li></ul></div>
-<div class="detail-side"><img class="detail-image" src="numerologia-servico.jpg" alt="Numerologia Cabalística"><span class="kicker pale">Contratação</span><h3>Quer entender seus números de verdade?</h3><p>Me chama no WhatsApp e eu te explico como o mapa funciona, prazo, entrega e contratação.</p>
-<a class="btn terracotta" target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20contratar%20meu%20Mapa%20Numerol%C3%B3gico.">Quero meu mapa</a></div></div></div></main></body></html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143f37">
+  <meta name="description" content="Mapa Numerológico Cabalístico e amostra gratuita com Rarí Fávaro.">
+  <title>Mapa Numerológico Cabalístico | Rarí Fávaro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --paper:#fffaf2;
+      --cream:#f7efe3;
+      --green:#143f37;
+      --green-deep:#092f29;
+      --terra:#bd6848;
+      --gold:#d6bb82;
+      --ink:#173a32;
+      --muted:#697a73;
+      --line:rgba(23,58,50,.14);
+      --shadow:0 24px 70px rgba(36,30,20,.12);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+    button,a,input{font:inherit}
+    button{border:0}
+    a{text-decoration:none;color:inherit}
+    [hidden]{display:none!important}
+    .wrap{width:min(980px,calc(100% - 28px));margin:auto}
+    .kicker{display:inline-block;color:var(--terra);font-size:9px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .primary-btn,.outline-btn{
+      min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:14px 19px;
+      border-radius:14px;cursor:pointer;font-size:11px;font-weight:800;transition:transform .18s ease,background .18s ease
+    }
+    .primary-btn{background:var(--gold);color:var(--green-deep)}
+    .outline-btn{border:1px solid rgba(255,255,255,.2);color:#fff}
+    .primary-btn:hover,.outline-btn:hover{transform:translateY(-2px)}
+
+    .top{
+      position:sticky;top:7px;z-index:40;width:min(1120px,calc(100% - 18px));margin:7px auto 0;
+      padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+      border:1px solid var(--line);border-radius:17px;background:rgba(255,250,242,.94);
+      backdrop-filter:blur(16px);box-shadow:0 8px 26px rgba(0,0,0,.05)
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand-mark{display:grid;place-items:center;color:var(--green);font-size:24px}
+    .brand strong{display:block;font-family:"Fraunces",serif;font-size:22px;line-height:1}
+    .brand small{display:block;margin-top:4px;color:var(--muted);font-size:8px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .top-link{padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:10px;font-weight:800}
+
+    .hero{padding:54px 0 34px}
+    .hero-card{
+      min-height:570px;overflow:hidden;display:grid;grid-template-columns:1.06fr .94fr;gap:44px;align-items:center;
+      padding:56px;border-radius:32px;background:radial-gradient(circle at 82% 8%,rgba(255,255,255,.16),transparent 31%),linear-gradient(145deg,var(--green),var(--green-deep));
+      color:#fff;box-shadow:var(--shadow)
+    }
+    .hero-copy h1{margin:10px 0 18px;color:#fff;font-family:"Fraunces",serif;font-size:clamp(55px,7.4vw,84px);line-height:.91;letter-spacing:-.05em}
+    .hero-copy p{max-width:530px;margin:0;color:rgba(255,255,255,.77);font-size:15px;line-height:1.7}
+    .hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
+    .hero-visual{position:relative;min-height:430px;overflow:hidden;border:1px solid rgba(255,255,255,.13);border-radius:210px 210px 26px 26px;background:rgba(255,255,255,.04)}
+    .hero-visual img{width:100%;height:430px;display:block;object-fit:cover}
+    .hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(9,47,41,.88))}
+    .visual-note{position:absolute;z-index:2;left:24px;right:24px;bottom:23px;margin:0;color:rgba(255,255,255,.84);font-family:"Fraunces",serif;font-size:18px;line-height:1.45}
+
+    .principle{padding:68px 0 74px}
+    .principle-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:64px;align-items:start}
+    .principle h2,.section-head h2,.correction-copy h2,.process-copy h2,.price-head h2{
+      margin:8px 0 15px;color:var(--green);font-family:"Fraunces",serif;font-size:clamp(42px,6vw,66px);line-height:.96;letter-spacing:-.04em
+    }
+    .principle-copy p{margin:0 0 13px;color:var(--muted);font-size:14px;line-height:1.72}
+    .principle-note{padding:20px;border-radius:18px;background:var(--cream);color:var(--ink);font-family:"Fraunces",serif;font-size:20px;line-height:1.5}
+    .principle-list{display:grid;gap:10px}
+    .principle-item{display:grid;grid-template-columns:38px 1fr;gap:13px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .principle-item span{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--cream);color:var(--terra);font-family:"Fraunces",serif;font-size:13px;font-weight:800}
+    .principle-item strong{display:block;color:var(--green);font-family:"Fraunces",serif;font-size:22px;line-height:1.05}
+    .principle-item p{margin:6px 0 0;color:var(--muted);font-size:11px;line-height:1.5}
+
+    .sample{padding:78px 0 88px;background:var(--cream)}
+    .section-head{max-width:720px;margin-bottom:30px}
+    .section-head p{margin:0;color:var(--muted);font-size:14px;line-height:1.68}
+    .sample-shell{overflow:hidden;border-radius:29px;background:linear-gradient(145deg,var(--green),var(--green-deep));box-shadow:var(--shadow)}
+    .sample-start{display:grid;grid-template-columns:.78fr 1.22fr;min-height:620px;color:#fff}
+    .sample-intro{padding:46px 38px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 20% 80%,rgba(214,187,130,.17),transparent 35%)}
+    .sample-intro h3{margin:8px 0 13px;color:#fff;font-family:"Fraunces",serif;font-size:42px;line-height:.98}
+    .sample-intro>p{margin:0;color:rgba(255,255,255,.72);font-size:12px;line-height:1.65}
+    .sample-points{display:grid;gap:9px;margin-top:24px}
+    .sample-points div{display:grid;grid-template-columns:22px 1fr;gap:9px;align-items:start;color:rgba(255,255,255,.78);font-size:10px;line-height:1.45}
+    .sample-points b{width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:rgba(214,187,130,.15);color:var(--gold);font-size:9px}
+    .data-form{padding:44px;background:var(--paper);color:var(--ink)}
+    .data-form h3{margin:7px 0 8px;color:var(--green);font-family:"Fraunces",serif;font-size:32px;line-height:1.05}
+    .data-form>p{margin:0 0 22px;color:var(--muted);font-size:11px;line-height:1.6}
+    .field{display:grid;gap:7px;margin-bottom:13px}
+    .field label,.focus-title{color:var(--green);font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .field input{width:100%;height:49px;padding:0 14px;border:1px solid var(--line);border-radius:13px;outline:none;background:#fff;color:var(--ink);font-size:12px}
+    .field input:focus{border-color:var(--terra);box-shadow:0 0 0 3px rgba(189,104,72,.1)}
+    .field small{color:var(--muted);font-size:8px;line-height:1.45}
+    .focus-options{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:8px 0 18px}
+    .focus-option input{position:absolute;opacity:0;pointer-events:none}
+    .focus-option span{min-height:43px;display:flex;align-items:center;justify-content:center;padding:9px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--muted);font-size:9px;font-weight:800;text-align:center;cursor:pointer}
+    .focus-option input:checked+span{border-color:var(--terra);background:var(--cream);color:var(--green)}
+    .data-form .primary-btn{width:100%;background:var(--green);color:#fff}
+    .form-error{min-height:17px;margin:9px 0 0;color:var(--terra);font-size:9px;font-weight:700;text-align:center}
+    .source-note{margin:10px 0 0;color:var(--muted);font-size:8px;line-height:1.5;text-align:center}
+
+    .sample-result{background:var(--paper);color:var(--ink)}
+    .result-hero{padding:46px 50px 40px;background:radial-gradient(circle at 85% 15%,rgba(214,187,130,.18),transparent 34%),linear-gradient(145deg,var(--green),var(--green-deep));color:#fff}
+    .result-hero h3{margin:8px 0 12px;color:#fff;font-family:"Fraunces",serif;font-size:clamp(38px,6vw,58px);line-height:.97;letter-spacing:-.04em}
+    .result-hero p{max-width:680px;margin:0;color:rgba(255,255,255,.74);font-size:12px;line-height:1.65}
+    .numbers-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:26px}
+    .number-card{padding:13px 10px;border:1px solid rgba(255,255,255,.13);border-radius:13px;background:rgba(255,255,255,.055)}
+    .number-card span{display:block;color:#f4c9b8;font-size:7px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+    .number-card strong{display:block;margin-top:4px;color:#fff;font-family:"Fraunces",serif;font-size:29px;line-height:1}
+    .result-body{padding:42px 50px 50px}
+    .result-heading{margin-bottom:20px}
+    .result-heading h4{margin:6px 0 8px;color:var(--green);font-family:"Fraunces",serif;font-size:31px;line-height:1}
+    .result-heading p{margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+    .reading-cards{display:grid;gap:9px}
+    .reading-card{display:grid;grid-template-columns:76px 1fr;gap:17px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .reading-number{display:grid;place-items:center;min-height:76px;border-radius:13px;background:var(--cream);color:var(--terra);font-family:"Fraunces",serif;font-size:34px}
+    .reading-copy small{display:block;color:var(--terra);font-size:7px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .reading-copy h5{margin:5px 0 7px;color:var(--green);font-family:"Fraunces",serif;font-size:22px}
+    .reading-copy p{margin:0;color:var(--muted);font-size:11px;line-height:1.62}
+    .period{margin-top:7px;color:var(--terra)!important;font-size:9px!important;font-weight:800}
+
+    .name-comparison{margin-top:24px;padding:24px;border-radius:18px;background:var(--cream)}
+    .name-comparison h4{margin:5px 0 9px;color:var(--green);font-family:"Fraunces",serif;font-size:27px}
+    .name-comparison>p{margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+    .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}
+    .compare-card{padding:15px;border:1px solid var(--line);border-radius:13px;background:#fff}
+    .compare-card small{display:block;color:var(--terra);font-size:7px;font-weight:800;text-transform:uppercase}
+    .compare-card strong{display:block;margin:5px 0;color:var(--green);font-family:"Fraunces",serif;font-size:22px}
+    .compare-card p{margin:0;color:var(--muted);font-size:9px;line-height:1.45}
+
+    .pyramid-section{margin-top:30px;padding-top:29px;border-top:1px solid var(--line)}
+    .pyramid-head{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end}
+    .pyramid-head h4{margin:6px 0 8px;color:var(--green);font-family:"Fraunces",serif;font-size:31px}
+    .pyramid-head p{max-width:600px;margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+    .apex{padding:12px 15px;border-radius:13px;background:var(--green);color:#fff;text-align:center}
+    .apex span{display:block;color:#f4c9b8;font-size:7px;font-weight:800;text-transform:uppercase}
+    .apex strong{display:block;margin-top:3px;font-family:"Fraunces",serif;font-size:27px}
+    .pyramid-scroll{margin-top:18px;overflow-x:auto;padding:20px;border-radius:18px;background:var(--green-deep);scrollbar-color:var(--gold) transparent}
+    .pyramid-canvas{width:max-content;min-width:100%;display:grid;gap:4px}
+    .pyramid-row{display:flex;justify-content:center;gap:4px}
+    .pyramid-cell{width:27px;height:27px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.1);border-radius:7px;background:rgba(255,255,255,.055);color:rgba(255,255,255,.76);font-family:"Fraunces",serif;font-size:11px}
+    .pyramid-cell.sequence{border-color:var(--gold);background:var(--gold);color:var(--green-deep);font-weight:800}
+    .sequence-section{margin-top:25px}
+    .sequence-section h4{margin:6px 0 9px;color:var(--green);font-family:"Fraunces",serif;font-size:29px}
+    .sequence-section>p{margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+    .sequence-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}
+    .sequence-card{padding:18px;border:1px solid var(--line);border-radius:15px;background:#fff}
+    .sequence-card strong{display:block;color:var(--terra);font-family:"Fraunces",serif;font-size:28px}
+    .sequence-card small{display:block;margin:3px 0 8px;color:var(--green);font-size:8px;font-weight:800}
+    .sequence-card p{margin:0;color:var(--muted);font-size:10px;line-height:1.58}
+    .sequence-clear{padding:18px;border-radius:15px;background:var(--cream);color:var(--muted);font-size:10px;line-height:1.55}
+    .result-cta{margin-top:27px;padding:25px;border-radius:19px;background:var(--terra);color:#fff}
+    .result-cta h4{margin:5px 0 8px;color:#fff;font-family:"Fraunces",serif;font-size:29px;line-height:1}
+    .result-cta p{margin:0 0 17px;color:rgba(255,255,255,.82);font-size:10px;line-height:1.58}
+    .result-cta .primary-btn{width:100%;background:var(--green);color:#fff}
+    .restart{display:block;margin:13px auto 0;padding:7px;background:transparent;color:var(--muted);cursor:pointer;font-size:9px;font-weight:800}
+
+    .layers{padding:80px 0 86px}
+    .layer-box{overflow:hidden;margin-top:28px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 16px 46px rgba(36,30,20,.07)}
+    .layer-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:7px;background:var(--cream);border-bottom:1px solid var(--line)}
+    .layer-tab{min-height:51px;padding:9px;border-radius:12px;background:transparent;color:var(--muted);cursor:pointer;font-size:9px;font-weight:800}
+    .layer-tab.active{background:var(--green);color:#fff}
+    .layer-content{display:grid;grid-template-columns:.75fr 1.25fr;min-height:390px}
+    .layer-lead{padding:37px 31px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,var(--green),var(--green-deep));color:#fff}
+    .layer-lead span{color:#f4c9b8;font-size:8px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .layer-lead h3{margin:8px 0 11px;color:#fff;font-family:"Fraunces",serif;font-size:38px;line-height:1}
+    .layer-lead p{margin:0;color:rgba(255,255,255,.72);font-size:11px;line-height:1.62}
+    .layer-detail{padding:35px}
+    .layer-detail h3{margin:6px 0 8px;color:var(--green);font-family:"Fraunces",serif;font-size:31px}
+    .layer-detail>p{margin:0;color:var(--muted);font-size:11px;line-height:1.58}
+    .layer-items{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}
+    .layer-items div{padding:11px 12px;border-radius:11px;background:var(--cream);color:var(--ink);font-size:9px;font-weight:700;line-height:1.4}
+
+    .correction{padding:80px 0;background:var(--green);color:#fff}
+    .correction-grid{display:grid;grid-template-columns:.84fr 1.16fr;gap:56px;align-items:start}
+    .correction-copy h2{color:#fff}
+    .correction-copy>p{margin:0;color:rgba(255,255,255,.7);font-size:13px;line-height:1.7}
+    .urgency{margin-top:21px;padding:18px 0 18px 18px;border-left:2px solid var(--gold);color:rgba(255,255,255,.9);font-family:"Fraunces",serif;font-size:19px;line-height:1.48}
+    .correction-cards{display:grid;gap:10px}
+    .correction-card{padding:21px;border:1px solid rgba(255,255,255,.12);border-radius:17px;background:rgba(255,255,255,.055)}
+    .correction-card span{display:block;color:#f4c9b8;font-size:8px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .correction-card h3{margin:6px 0 7px;color:#fff;font-family:"Fraunces",serif;font-size:26px}
+    .correction-card p{margin:0;color:rgba(255,255,255,.68);font-size:10px;line-height:1.58}
+
+    .process{padding:78px 0}
+    .process-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;align-items:start}
+    .process-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.72}
+    .steps{display:grid;gap:10px}
+    .step{padding:21px;border:1px solid var(--line);border-radius:17px;background:#fff}
+    .step span{display:block;color:var(--terra);font-size:8px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .step h3{margin:6px 0 7px;color:var(--green);font-family:"Fraunces",serif;font-size:25px}
+    .step p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}
+
+    .pricing{padding:76px 0 84px;background:var(--cream)}
+    .price-head{max-width:710px;margin-bottom:28px}
+    .price-head p{margin:0;color:var(--muted);font-size:14px;line-height:1.68}
+    .price-card{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center;padding:38px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 16px 46px rgba(36,30,20,.08)}
+    .price-copy small{display:block;color:var(--terra);font-size:8px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .price-copy h3{margin:7px 0 9px;color:var(--green);font-family:"Fraunces",serif;font-size:37px;line-height:1}
+    .price-copy p{margin:0;color:var(--muted);font-size:11px;line-height:1.62}
+    .price-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+    .price-tags span{padding:7px 9px;border-radius:999px;background:var(--cream);color:var(--ink);font-size:8px;font-weight:800}
+    .price-value{padding:25px;border-radius:19px;background:var(--green);color:#fff;text-align:center}
+    .price-value span{display:block;color:#f4c9b8;font-size:8px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .price-value strong{display:block;margin:8px 0 6px;color:#fff;font-family:"Fraunces",serif;font-size:58px;line-height:1}
+    .price-value p{margin:0 0 17px;color:rgba(255,255,255,.68);font-size:9px;line-height:1.5}
+    .price-value .primary-btn{width:100%}
+
+    footer{padding:30px 0 44px;background:var(--green-deep);color:#fff}
+    footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    footer strong{font-family:"Fraunces",serif;font-size:20px}
+    footer span{font-size:10px;color:rgba(255,255,255,.6)}
+    button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+    @media(max-width:760px){
+      .brand small{display:none}
+      .hero{padding:36px 0 20px}
+      .hero-card{min-height:0;grid-template-columns:1fr;gap:27px;padding:30px 22px;border-radius:25px}
+      .hero-copy h1{font-size:49px}
+      .hero-copy p{font-size:13px}
+      .hero-actions{display:grid}.hero-actions a{width:100%}
+      .hero-visual,.hero-visual img{min-height:330px;height:330px}
+      .principle,.layers,.process{padding:55px 0}
+      .principle-grid,.correction-grid,.process-grid{grid-template-columns:1fr;gap:29px}
+      .sample{padding:57px 0 64px}
+      .sample-start{grid-template-columns:1fr}
+      .sample-intro{padding:31px 24px}
+      .data-form{padding:30px 22px}
+      .result-hero,.result-body{padding:32px 22px}
+      .numbers-grid{grid-template-columns:repeat(3,1fr)}
+      .reading-card{grid-template-columns:58px 1fr}
+      .reading-number{min-height:58px;font-size:28px}
+      .compare-grid,.sequence-grid{grid-template-columns:1fr}
+      .pyramid-head{grid-template-columns:1fr}
+      .apex{width:max-content}
+      .layer-tabs{grid-template-columns:1fr}
+      .layer-content{grid-template-columns:1fr}
+      .layer-lead,.layer-detail{padding:28px 22px}
+      .correction{padding:58px 0}
+      .price-card{grid-template-columns:1fr;padding:28px 22px}
+    }
+    @media(max-width:440px){
+      .top{top:5px}.top-link{padding:9px 12px}
+      .hero-copy h1{font-size:44px}
+      .focus-options,.layer-items{grid-template-columns:1fr}
+      .numbers-grid{grid-template-columns:1fr 1fr}
+      .reading-card{grid-template-columns:1fr}
+      .reading-number{width:58px}
+      .pyramid-cell{width:24px;height:24px;font-size:10px}
+      footer .wrap{align-items:flex-start;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Voltar para o início">
+      <span class="brand-mark">✦</span>
+      <span><strong>Rarí Fávaro</strong><small>Numerologia Cabalística</small></span>
+    </a>
+    <a class="top-link" href="https://wa.me/5521975003419" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="kicker" style="color:#f4c9b8">Mapa Numerológico Cabalístico</span>
+            <h1>Seu nome não é só como chamam você.</h1>
+            <p>Ele forma uma composição numérica que se repete quando é falado, escrito, assinado e usado profissionalmente. Eu abro essa composição, encontro o que está ativo e testo correções para o nome acompanhar a vida que você quer construir.</p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#amostra">Abrir minha amostra</a>
+              <a class="outline-btn" href="#mapa-completo">Ver o mapa completo</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="numerologia-servico.jpg" alt="Numerologia Cabalística">
+            <p class="visual-note">Nome, data, Pirâmide da Vida e correção calculados por inteiro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principle">
+      <div class="wrap principle-grid">
+        <div class="principle-copy">
+          <span class="kicker">O que eu faço</span>
+          <h2>Eu abro o código do seu nome e da sua data.</h2>
+          <p>Na Numerologia Cabalística, cada letra recebe um valor. A soma e a posição dessas letras revelam forças, ausências, excessos, ciclos e padrões que atravessam sua história.</p>
+          <p>Eu não olho apenas um número final. Calculo cada campo, construo a Pirâmide linha por linha, identifico sequências negativas e comparo o nome de nascimento com o nome que você usa hoje.</p>
+          <div class="principle-note">O mapa mostra o que existe. A correção testa uma nova composição para aquilo que você quer sustentar.</div>
+        </div>
+        <div class="principle-list">
+          <article class="principle-item"><span>01</span><div><strong>Quem você é</strong><p>O núcleo mostra aquilo que te move, o que você expressa e a forma como sua energia chega nas pessoas.</p></div></article>
+          <article class="principle-item"><span>02</span><div><strong>O que se repete</strong><p>A Pirâmide revela concentrações, sequências negativas e padrões que podem continuar aparecendo em áreas diferentes.</p></div></article>
+          <article class="principle-item"><span>03</span><div><strong>Onde você está</strong><p>Os ciclos, momentos decisivos e o Ano Pessoal mostram o tempo atual e aquilo que ele exige.</p></div></article>
+          <article class="principle-item"><span>04</span><div><strong>O que pode ser corrigido</strong><p>Eu testo novas composições e recalculo cada opção antes de indicar um nome social, profissional ou digital.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sample" id="amostra">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Experiência gratuita</span>
+          <h2>Abra a primeira camada do seu mapa.</h2>
+          <p>Digite seus dados para calcular cinco forças do seu mapa, comparar seu nome atual e construir a Pirâmide da Vida. Esta é uma degustação. O mapa completo abre todas as camadas e testa a correção do nome.</p>
+        </div>
+
+        <div class="sample-shell">
+          <section class="sample-start" id="sampleStart">
+            <aside class="sample-intro">
+              <span class="kicker" style="color:#f4c9b8">Sua primeira leitura</span>
+              <h3>O seu nome já está repetindo uma composição.</h3>
+              <p>Vamos calcular o que aparece antes de qualquer interpretação. Os textos do resultado foram retirados literalmente da apostila de Numerologia Cabalística.</p>
+              <div class="sample-points">
+                <div><b>1</b><span>Motivação, Impressão e Expressão</span></div>
+                <div><b>2</b><span>Destino e Ano Pessoal ativo</span></div>
+                <div><b>3</b><span>Pirâmide da Vida completa</span></div>
+                <div><b>4</b><span>Sequências negativas de 111 a 999</span></div>
+              </div>
+            </aside>
+
+            <form class="data-form" id="numerologyForm" novalidate>
+              <span class="kicker">Seus dados</span>
+              <h3>Comece pelo nome que recebeu.</h3>
+              <p>Use o nome completo da certidão. Se você usa outro nome hoje, coloque também para comparar as duas composições.</p>
+              <div class="field">
+                <label for="birthName">Nome completo de nascimento</label>
+                <input id="birthName" name="birthName" autocomplete="name" placeholder="Exemplo: Maria de Souza Silva">
+              </div>
+              <div class="field">
+                <label for="currentName">Nome que você usa hoje</label>
+                <input id="currentName" name="currentName" placeholder="Nome social, profissional ou digital">
+                <small>Se for igual ao nome de nascimento, você pode deixar em branco.</small>
+              </div>
+              <div class="field">
+                <label for="birthDate">Data de nascimento</label>
+                <input id="birthDate" name="birthDate" inputmode="numeric" maxlength="10" placeholder="DD/MM/AAAA">
+              </div>
+              <p class="focus-title">O que mais pede compreensão agora?</p>
+              <div class="focus-options">
+                <label class="focus-option"><input type="radio" name="focus" value="Identidade e propósito" checked><span>Identidade e propósito</span></label>
+                <label class="focus-option"><input type="radio" name="focus" value="Trabalho e prosperidade"><span>Trabalho e prosperidade</span></label>
+                <label class="focus-option"><input type="radio" name="focus" value="Amor e relacionamentos"><span>Amor e relacionamentos</span></label>
+                <label class="focus-option"><input type="radio" name="focus" value="Padrões e ciclo atual"><span>Padrões e ciclo atual</span></label>
+              </div>
+              <button class="primary-btn" type="submit">Abrir minha amostra</button>
+              <p class="form-error" id="formError" aria-live="polite"></p>
+              <p class="source-note">Os dados são usados apenas no seu navegador para gerar esta amostra.</p>
+            </form>
+          </section>
+
+          <section class="sample-result" id="sampleResult" hidden>
+            <div class="result-hero">
+              <span class="kicker" style="color:#f4c9b8">Sua amostra numerológica</span>
+              <h3 id="resultTitle">Seus números começaram a falar.</h3>
+              <p id="resultLead"></p>
+              <div class="numbers-grid" id="numbersGrid"></div>
+            </div>
+            <div class="result-body">
+              <div class="result-heading">
+                <span class="kicker">Primeira camada</span>
+                <h4>O que cada número mostra na apostila</h4>
+                <p>Os textos abaixo são trechos literais da apostila. Não foram suavizados, resumidos com outras palavras ou reinterpretados.</p>
+              </div>
+              <div class="reading-cards" id="readingCards"></div>
+
+              <section class="name-comparison" id="nameComparison" hidden>
+                <span class="kicker">Nome de nascimento x nome atual</span>
+                <h4>O nome que você usa muda a composição.</h4>
+                <p>Esta comparação mostra apenas a Expressão e as sequências encontradas. Uma correção só pode ser indicada depois que cada nova opção for recalculada por inteiro.</p>
+                <div class="compare-grid" id="compareGrid"></div>
+              </section>
+
+              <section class="pyramid-section">
+                <div class="pyramid-head">
+                  <div>
+                    <span class="kicker">Pirâmide da Vida</span>
+                    <h4>O desenho completo do seu nome</h4>
+                    <p>Cada linha nasce da soma da linha anterior. As células destacadas mostram repetições triplas ou maiores encontradas no cálculo.</p>
+                  </div>
+                  <div class="apex"><span>Ápice</span><strong id="pyramidApex">0</strong></div>
+                </div>
+                <div class="pyramid-scroll"><div class="pyramid-canvas" id="pyramidCanvas"></div></div>
+              </section>
+
+              <section class="sequence-section">
+                <span class="kicker">Sequências negativas</span>
+                <h4>O que apareceu na sua Pirâmide</h4>
+                <p>Quando uma sequência aparece, o texto exibido é o mesmo utilizado pela apostila.</p>
+                <div class="sequence-grid" id="sequenceGrid"></div>
+              </section>
+
+              <div class="result-cta">
+                <span class="kicker" style="color:#fff">A amostra encontrou. O mapa completo investiga e corrige.</span>
+                <h4>Você pode continuar usando o mesmo nome sem saber tudo o que ele reforça.</h4>
+                <p>No mapa completo eu abro as camadas que não aparecem aqui, investigo a composição do seu nome e testo até três correções recalculadas por inteiro.</p>
+                <a class="primary-btn" id="resultWhats" target="_blank" rel="noopener">Quero investigar e corrigir meu nome</a>
+              </div>
+              <button class="restart" id="restartSample" type="button">Calcular outro nome</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="layers" id="mapa-completo">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">O mapa completo</span>
+          <h2>Uma amostra mostra cinco números. O seu mapa abre a estrutura inteira.</h2>
+          <p>Você não precisa voltar para outro atendimento se não quiser. O documento é seu e organiza as principais camadas da sua Numerologia Cabalística para consulta.</p>
+        </div>
+        <div class="layer-box">
+          <div class="layer-tabs" role="tablist" aria-label="Camadas do mapa">
+            <button class="layer-tab active" type="button" role="tab" aria-selected="true" data-layer="core">Seu núcleo</button>
+            <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="patterns">Seus padrões</button>
+            <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="cycles">Seus ciclos</button>
+            <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="life">Sua vida</button>
+            <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="name">Seu nome</button>
+          </div>
+          <div class="layer-content" role="tabpanel">
+            <aside class="layer-lead">
+              <span id="layerNumber">Camada 01</span>
+              <h3 id="layerTitle">Seu núcleo numerológico</h3>
+              <p id="layerLead">A estrutura que mostra quem você é, como chega ao mundo e qual caminho sua data organiza.</p>
+            </aside>
+            <div class="layer-detail">
+              <span class="kicker" id="layerKicker">Base do mapa</span>
+              <h3 id="layerDetailTitle">Quem você é e o que veio realizar</h3>
+              <p id="layerDescription">Esta camada reúne os números centrais do nome e da data, sem separar sua essência da forma como você vive.</p>
+              <div class="layer-items" id="layerItems"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="correction">
+      <div class="wrap correction-grid">
+        <div class="correction-copy">
+          <span class="kicker" style="color:#f4c9b8">Correção do nome</span>
+          <h2>Descobrir o padrão e continuar repetindo o mesmo nome é parar no meio.</h2>
+          <p>Na leitura cabalística, o nome é ativado quando você fala, assina, divulga, trabalha e é chamado. Se a composição concentra sequências ou não acompanha o movimento que você quer construir, eu não encerro o mapa apenas apontando o problema.</p>
+          <div class="urgency">Quanto antes você entende o que o seu nome reforça, antes pode escolher como quer ser chamado, visto e reconhecido.</div>
+        </div>
+        <div class="correction-cards">
+          <article class="correction-card"><span>Primeiro</span><h3>Eu encontro o que está ativo</h3><p>Confiro Motivação, Impressão, Expressão, Pirâmide, sequências, ausências e excessos do nome atual.</p></article>
+          <article class="correction-card"><span>Depois</span><h3>Eu testo até três opções</h3><p>Não acrescento uma letra e torço para funcionar. Cada possibilidade é recalculada do início ao fim.</p></article>
+          <article class="correction-card"><span>Por fim</span><h3>Você sabe onde usar</h3><p>Eu explico a grafia, a pronúncia e o uso do nome pessoal, social, profissional ou digital indicado para o seu momento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="wrap process-grid">
+        <div class="process-copy">
+          <span class="kicker">Como eu construo</span>
+          <h2>Não é um relatório automático.</h2>
+          <p>Eu calculo, confiro, escrevo e cruzo cada campo com os outros antes de preparar as correções e organizar o documento final.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span>Passo 1</span><h3>Você me envia seus dados</h3><p>Nome completo de nascimento, nome usado hoje, data de nascimento e o momento que está vivendo.</p></article>
+          <article class="step"><span>Passo 2</span><h3>Eu faço todos os cálculos</h3><p>Abro o núcleo, a Pirâmide, as sequências, os ciclos, desafios, carmas e campos complementares.</p></article>
+          <article class="step"><span>Passo 3</span><h3>Eu testo a correção</h3><p>Crio e recalculo até três opções de nome, eliminando combinações que continuam reforçando o que precisa ser corrigido.</p></article>
+          <article class="step"><span>Passo 4</span><h3>Você recebe seu mapa</h3><p>O documento chega organizado e eu encontro você online para explicar o mapa, a correção e o modo de usar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="wrap">
+        <div class="price-head">
+          <span class="kicker">Investimento</span>
+          <h2>Seu mapa completo, com a correção do nome.</h2>
+          <p>Uma leitura feita manualmente para você entender sua estrutura, seu tempo e o código que está colocando no mundo todos os dias.</p>
+        </div>
+        <div class="price-card">
+          <div class="price-copy">
+            <small>Mapa Numerológico Cabalístico</small>
+            <h3>Mapa completo + até 3 correções</h3>
+            <p>Documento digital personalizado, Pirâmide da Vida, todas as camadas cabalísticas da apostila, correções recalculadas e encontro online de entrega.</p>
+            <div class="price-tags"><span>Mapa digital</span><span>Pirâmide completa</span><span>Até 3 correções</span><span>Encontro de entrega</span><span>Até 10 dias úteis</span></div>
+          </div>
+          <div class="price-value">
+            <span>Valor</span>
+            <strong>R$ 97</strong>
+            <p>Eu confirmo seus dados, pagamento e prazo pelo WhatsApp.</p>
+            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20contratar%20meu%20Mapa%20Numerol%C3%B3gico%20Cabal%C3%ADstico%20com%20at%C3%A9%203%20corre%C3%A7%C3%B5es%20do%20nome%20por%20R%24%2097.">Quero meu mapa completo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><strong>Rarí Fávaro</strong><span>rarifavaro.com.br</span></div></footer>
+
+  <script>
+    const interpretations = {"motivacao":{"1":"O Número 1 na Motivação exige que você se situe sempre de forma a ficar na frente dos outros. Tem que ser o (a) primeiro (a) em tudo o que faz.","2":"O Número 2 na Motivação indica o desejo de ser sempre gentil com todos, conseguindo ou não. Deseja ser compassivo (a), compreensivo (a), atencioso (a), útil e sempre fazendo concessões em favor da harmonia de todos.","3":"O Número 3 na Motivação indica que o seu maior desejo é se expressar e receber a aprovação dos outros. Quer emitir a sua opinião, ser criativo (a), cultivar o talento e admirar a beleza.","4":"O Número 4 na Motivação mostra o desejo de ver os fatos reais e a verdade sem enfeites, o que o (a) torna mais preparado (a) que a maioria para realizar algo construtivo com isso. Muitas pessoas pedem a verdade, mas poucas estão tão preparadas como você para aceitá-la.","5":"O Número 5 na Motivação indica um forte desejo de buscar até finalmente encontrar as soluções nas quais os outros nunca pensaram antes. Está sempre alerta e suscetível a tudo o que está relacionado com os cinco sentidos.","6":"O Número 6 na Motivação descreve um grande desejo de ser amistoso (a), afável, e conscientemente interessado (a) nos problemas dos outros como se fossem os seus. Deseja se envolver, assumir um senso de responsabilidade social, e até mesmo compartilhar de um senso de culpa coletiva pelo que os outros fazem em cooperação de grupo.","7":"O Número 7 na Motivação mostra o seu desejo de ficar sozinho (a) para explorar as profundezas da alma. A sua busca é pela perfeição, de forma a se destacar, em seu próprio julgamento, como a última palavra em distinção profissional.","8":"O Número 8 na Motivação indica que você realmente aspira uma posição de poder e influência no mundo. Deseja tudo em grande escala.","9":"O Número 9 na Motivação representa o seu desejo de descobrir em todos algo com que possa se identificar. Quer ver a vida de uma perspectiva mais ampla e luta continuamente para enfatizar os vínculos que a humanidade tem em comum e não as diferenças que distinguem uns dos outros.","11":"O Número 11 na Motivação indica que você deseja a evolução espiritual e o desenvolvimento do seu poder pessoal acima de tudo. Mostra que vem trilhando esse caminho há muito tempo, provavelmente por mais de uma encarnação.","22":"O Número 22 na Motivação revela o seu desejo de continuar as realizações tangíveis de vidas anteriores. Deseja a realização material."},"ano":{"1":"Este é o ano para começar coisas novas; o ano que estabelece o estilo de todo o ciclo de nove anos, com perspectivas de grandes mudanças e novos rumos. É o momento de tomar iniciativa e mostrar coragem e determinação.","2":"Este é o ano para agir com discrição e ser paciente, mantendo-se receptivo (a) às ideias dos outros e permanecendo em segundo plano. É uma fase muito boa para amizades e relacionamentos.","3":"Este é um ano de boa saúde e de intensa vida social que, no entanto, poderá trazer tensão emocional. É uma fase boa para divertimentos, viagens, crescimento pessoal e para cultivar novas amizades.","4":"Este é um ano de restrições, de trabalho duro e de grandes despesas. É o momento de se construir para o futuro.","5":"Este é o ano para se deixar levar por condições em constante mudança, para viver o presente sem fazer muitos planos para o futuro, para abandonar-se aos seus impulsos mais criativos da Alma. É um ano em ritmo acelerado, propenso a acidentes e cheio de mudanças inesperadas: do bom para o ruim, do ruim para o bom.","6":"Este é um ano para o casamento e as responsabilidades domésticas. É uma fase em que alguma doença crônica, eventualmente, talvez se manifeste para que possa ser curada.","7":"Este é um ano para o isolamento e o descanso. Um ano para o estudo e o aperfeiçoamento interior.","8":"Este é um ano dinâmico e materialista. Os negócios provavelmente deverão prosperar.","9":"Este é um ano de faxina, entre o fim de um ciclo e o começo do próximo. É o momento de se livrar de tudo o que for desnecessário ou estiver gasto pelo uso; especialmente pessoas para as quais não existe mais lugar em sua vida."},"destino":{"1":"O Número 1 no Destino significa que a direção geral para a sua vida inteira será uma escalada sem fim para se superar ou para se aperfeiçoar a cada passo do caminho. Nada vem fácil demais para você.","2":"O Número 2 no Destino significa que a direção geral da sua vida é um constante encorajamento a se refrear e esperar pacientemente pelo momento certo para capitalizar o ritmo ideal. Entre outras coisas, possui a essência do ritmo e da adequação do tempo.","3":"O Número 3 no Destino significa que a direção geral da sua vida tende a condições de facilidade e relaxamento, para que seja possível contribuir para os aspectos decorativos da vida. Você veio para se expressar a si próprio (a) e emitir opiniões e criticas, porque tem talento para visualizar.","4":"O Número 4 no Destino significa que a direção geral da sua vida é uma necessidade constante de permanecer firme, de escavar, de segurar e trabalhar continuamente a mesma coisa muitas vezes. Rotina, disciplina, esforço físico, senso comum e lógica são as chaves para transformar esse desafio árduo numa realidade prática de valor duradouro.","5":"O Número 5 no Destino significa que a direção geral da sua vida é uma série de reviravoltas surpreendentes, em que as melhores oportunidades aparecem de súbito e de uma maneira tal que você é forçado (a) a assumir grandes riscos ou atitudes especulativas para conseguir romper com o padrão geral que o (a) segura. Nada tende a durar muito tempo sob o Destino 5, a menos que se torne apegado (a) demais ou corrompido (a) demais, para aceitar o convite da aventura.","6":"O Número 6 no Destino significa que a direção geral da sua vida é desenvolver uma compreensão do que ganha ao desistir de alguma coisa pessoal, para operar mais efetivamente numa sociedade ou equipe. Você sempre abre mão de alguma coisa: geralmente algum tipo de independência ou a própria individualidade.","7":"O Número 7 no Destino significa que a direção geral para a sua vida é se afastar um pouco do fluxo geral das experiências e buscar justificativas e alento no seu interior, como algo oposto aos elementos físicos e materiais da vida diária. Isso não significa, no entanto, que descubra seu caminho apenas através da religião, da espiritualidade ou dos elementos metafísicos, ou que se preocupe menos pela totalidade da vida.","8":"O Número 8 no Destino significa que a direção geral da sua vida tende a um esforço ativo e consciente para restaurar o equilíbrio que você sente estar faltando em áreas muito importantes da vida. Para realizar efetivamente esse ajuste, em geral é necessário atacar os elementos com força e empregar algum tipo de terapia de choque, para apanhar os componentes de surpresa.","9":"O Número 9 no Destino significa que a direção geral da sua vida tende a afastá-lo (a) dos compromissos mais pessoais e íntimos, colocando-o (a) num caminho que, supostamente, enriquece a totalidade da experiência humana. Está destinado (a) a percorrer a Terra, para que possa entrar em contato com todo espectro da experiência humana.","11":"O Número 11 no Destino significa que a direção geral da sua vida será a de transmitir diplomaticamente a sua mensagem para o mundo. Poderá ter inspiração e reconhecimento se encaminhar com sabedoria seus elevados ideais.","22":"O Número 22 no Destino significa que a direção geral da sua vida está voltada para conquistar a fama e dar sua contribuição em benefício de todos. Transforme os seus sonhos em realidade numa escala universal – comércio, política ou arte internacional."},"expressao":{"1":"O Número 1 na Expressão revela uma personalidade independente, desembaraçada, agressiva, forte, dominadora e enérgica; original, inventiva, pioneira, ambiciosa, determinada e pouco cooperativa. Ao ser você mesmo (a) é natural que algumas pessoas o (a) considerem sob uma luz negativa, porque é assim que você as afeta.","2":"O Número 2 na Expressão revela que você, sob muitos aspectos, é o oposto do numero 1. É dependente, não agressivo (a), vacilante, gentil e receptivo (a).","3":"O Número 3 na Expressão revela, sob alguns aspectos, uma perfeita combinação das vibrações de 1 (liderança) e 2 (cooperação), que resulta numa alegre forma de autoexpressão criativa. Como o 1 é a força espiritual do início e o 2 é a reflexão sensível do que pode ser, o 3 é o todo composto, que dá justificação ao que houve antes no 1 e no 2.","4":"O Número 4 na Expressão revela maturidade. Um ser que já nasceu “velho e sério”.","5":"O Número 5 na Expressão revela uma ruptura fundamental com os padrões vigentes. Seu objetivo é ser diferente, de alguma forma, de todos os outros.","6":"O Número 6 na Expressão revela uma pessoa que se relaciona facilmente com os outros de maneira natural, amigável e consciente. A sua essência é o ajustamento, diminuição e possível eliminação ou renúncia de certos fatores pessoais para melhor apreciar um composto grupal.","7":"O Número 7 na Expressão revela um caráter que busca na individuação e na especialização o caminho de evolução. A sua vibração é, portanto, solitária e simboliza perfeição através de uma espécie de autopurificação.","8":"O Número 8 na Expressão revela confrontação com decisões importantes, julgamentos, controle administrativo e prerrogativas executivas. Assim, você é alguém que, invariavelmente, tem a mente forte, os sentimentos maduros e está, geralmente, preparado (a) para percorrer o caminho inteiro até chegar àquilo que quer.","9":"O Número 9 na Expressão revela o mais alto e o último grau primário; representa o término de um ciclo completo de desenvolvimento antes que o espírito inicie um novo ciclo evolutivo, ou eleve-se a outras posições. Simboliza o final da conquista humana.","11":"O Número 11 na Expressão revela grande intuição e visão profunda da vida. Suas vibrações são as de um (a) líder espiritual, trabalhador (a) inspirado (a) para o bem da humanidade.","22":"O Número 22 na Expressão revela qualidades geniais de poder e comando. Tem necessidade de expressar um anseio básico de desenvolvimento, completar as coisas de um modo pleno e trabalhar com grandes grupos ou organizações."},"impressao":{"1":"O Número 1 na Impressão faz você parecer uma pessoa enérgica, determinada, agressiva, autocentrada, egocêntrica, egoísta e direta. Geralmente vai direto ao assunto sem muitos rodeios.","2":"O Número 2 na Impressão faz você parecer tímido (a), sensível, condescendente, gentil, compreensivo (a), cooperativo (a). É visto (a) como um (a) bom (a) seguidor (a), porque a sua inclinação pessoal é esperar que alguém tome a iniciativa ou lhe diga o que fazer.","3":"O Número 3 na Impressão revela um ser talentoso em alguma forma de autoexpressão, mesmo que não exercida. Raramente esconde seus sentimentos e sempre sabe o que dizer e que opinião emitir.","4":"O Número 4 na Impressão mostra que você é uma pessoa prática, centrada e dotada de esforço e persistência necessários para empreender qualquer tarefa. Parece ter mais força e resistência que a média, suportando durezas e privações que os outros não suportariam.","5":"O Número 5 na Impressão revela que você invariavelmente sai da linha de uma forma ou de outra, e insiste em fazer as coisas de modo diferente dos outros. Às vezes, sob certas condições, essa habilidade para melhorar e buscar novas soluções leva a uma mudança construtiva e a uma descoberta fundamental para todos os envolvidos.","6":"O Número 6 na Impressão revela uma aparência de pessoa amistosa e agradável, não importando como se sinta. Passa a impressão de estar mais preocupado (a) com os valores dos outros num contexto social do que com suas próprias motivações.","7":"O Número 7 na Impressão mostra uma preferência por ficar só a estar em grupo. Essa característica pode aparecer como uma distinção notável ou apenas como uma excentricidade que impede o relacionamento social.","8":"O Número 8 na Impressão acentua uma atitude de comportamento acima das tendências pessoais. Tem personalidade dinâmica e as pessoas reconhecem a sua autoridade, pois aparenta ser abastado (a) e controlado (a).","9":"O Número 9 na Impressão reflete uma personalidade, supostamente, no nível mais alto da compaixão. Aparenta possuir uma amplitude de compreensão bem como um magnetismo pessoal que é universal em extensão."},"sequencias":{"111":"A pessoa fica limitada, perdendo a coragem de se aventurar em algo novo. Pode, também, ficar um longo período inativo (a), desempregado (a) ou mesmo impotente para realizar o que quer que seja permanecendo nesse estado o tempo que durar o Arcano que domina o período.","222":"Esta sequência indica possibilidade de timidez e indecisão, podendo levar o (a) seu (a) possuidor (a) a ser subjugado (a) por aqueles mais próximos, sejam eles amigos, sócios, colegas de trabalho ou simplesmente conhecidos. Faz perder a autoestima, limitando-o (a) quanto a seus projetos e realizações.","333":"Indica possibilidade de ser incompreendido (a), dificuldade no diálogo, principalmente com colegas de trabalho e com a (o) companheira (o). Tem dificuldade de se impor em seus projetos e para convencer as pessoas.","444":"Reflete dificuldade na realização profissional. Pode ser mal remunerado (a) e as perspectivas profissionais serem difíceis, ou ter dificuldade em se manter no emprego, ou se dar bem em qualquer atividade.","555":"Indica possíveis mudanças não desejadas de casa, de profissão ou meio social. Sob esta influência, a pessoa tem frequentes altos e baixos, não se fixando profissionalmente, sempre à procura de melhores oportunidades, e ter dificuldade para as encontrar.","666":"Indica possibilidade de haver decepções com amigos, sócios, parentes e até com o cônjuge (namorada (o) ou companheira (o)), que não o (a) compreende em seus propósitos e sentimentos.","777":"Faz com que se afaste de tudo e de todos. Pode levar ao desmando, transforma-lo (a) em um ser dependente, vaidoso (a), arrogante e, consequentemente, vítima da própria intolerância.","888":"Esta sequência torna arredio (a), afastando-o (a) das atividades sociais. Caso não seja evoluído (a) espiritualmente, poderá descontrolar-se emocionalmente com muita facilidade.","999":"Reflete uma tendência a passar por dificuldades financeiras, eventualmente perdas de bens, eventuais fracassos nos negócios e vários tipos de provações provocadas pelos períodos de estagnação. Tudo isto pode afetar o sistema nervoso e o coração."}};
+    const whatsappNumber = "5521975003419";
+
+    const letterGroups = {
+      1:"AIJQY",
+      2:"BKR",
+      3:"CGLS",
+      4:"DMT",
+      5:"EHN",
+      6:"UVWXÇ",
+      7:"OZ",
+      8:"FP"
+    };
+    const letterValues = {};
+    Object.keys(letterGroups).forEach(function(number){
+      Array.from(letterGroups[number]).forEach(function(letter){ letterValues[letter] = Number(number); });
+    });
+    const accents = {
+      "Á":["A",2],"É":["E",2],"Í":["I",2],"Ó":["O",2],"Ú":["U",2],
+      "Ã":["A",3],"Õ":["O",3],"Â":["A",7],"Ê":["E",7],"Ô":["O",7],
+      "À":["A","double"],"È":["E","double"],"Ì":["I","double"],"Ò":["O","double"],"Ù":["U","double"],
+      "Ä":["A","double"],"Ë":["E","double"],"Ï":["I","double"],"Ö":["O","double"],"Ü":["U","double"]
+    };
+
+    function reduceNumber(value,preserveMasters){
+      let number = Math.abs(Number(value) || 0);
+      while(number > 9){
+        if(preserveMasters && (number === 11 || number === 22)) return number;
+        number = String(number).split("").reduce(function(total,digit){ return total + Number(digit); },0);
+      }
+      return number;
+    }
+
+    function letterValue(character){
+      const upper = character.toUpperCase();
+      if(upper === "Ç") return 6;
+      if(accents[upper]){
+        const baseValue = letterValues[accents[upper][0]] || 0;
+        const modifier = accents[upper][1];
+        return reduceNumber(modifier === "double" ? baseValue * 2 : baseValue + modifier,false);
+      }
+      return letterValues[upper] || 0;
+    }
+
+    function isVowel(character){
+      const upper = character.toUpperCase();
+      const base = accents[upper] ? accents[upper][0] : upper;
+      return "AEIOU".includes(base);
+    }
+
+    function validNameCharacters(name){
+      return Array.from(name.toUpperCase()).filter(function(character){ return letterValue(character) > 0; });
+    }
+
+    function calculateName(name){
+      const characters = validNameCharacters(name);
+      const all = characters.map(letterValue);
+      const vowels = characters.filter(isVowel).map(letterValue);
+      const consonants = characters.filter(function(character){ return !isVowel(character); }).map(letterValue);
+      const motivation = reduceNumber(vowels.reduce(function(a,b){ return a+b; },0),true);
+      const impression = reduceNumber(consonants.reduce(function(a,b){ return a+b; },0),false);
+      const expression = reduceNumber(all.reduce(function(a,b){ return a+b; },0),true);
+      const rows = buildPyramid(all);
+      return {characters:characters,values:all,motivation:motivation,impression:impression,expression:expression,rows:rows,runs:findSequences(rows)};
+    }
+
+    function buildPyramid(values){
+      const rows = [values];
+      while(rows[rows.length-1].length > 1){
+        const current = rows[rows.length-1];
+        const next = [];
+        for(let index=0;index<current.length-1;index+=1){
+          next.push(reduceNumber(current[index]+current[index+1],false));
+        }
+        rows.push(next);
+      }
+      return rows;
+    }
+
+    function findSequences(rows){
+      const runs = [];
+      rows.forEach(function(row,rowIndex){
+        let start = 0;
+        while(start < row.length){
+          let end = start + 1;
+          while(end < row.length && row[end] === row[start]) end += 1;
+          if(end - start >= 3){
+            runs.push({number:row[start],line:rowIndex+1,start:start,length:end-start});
+          }
+          start = end;
+        }
+      });
+      return runs;
+    }
+
+    function parseDate(value){
+      const match = value.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+      if(!match) return null;
+      const day = Number(match[1]),month = Number(match[2]),year = Number(match[3]);
+      const date = new Date(year,month-1,day);
+      if(date.getFullYear()!==year || date.getMonth()!==month-1 || date.getDate()!==day) return null;
+      return {day:day,month:month,year:year};
+    }
+
+    function calculateDestiny(dateParts){
+      const digits = String(dateParts.day).padStart(2,"0")+String(dateParts.month).padStart(2,"0")+String(dateParts.year);
+      return reduceNumber(digits.split("").reduce(function(total,digit){ return total+Number(digit); },0),true);
+    }
+
+    function calculatePersonalYear(dateParts){
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const birthdayPassed = now.getMonth()+1 > dateParts.month || (now.getMonth()+1 === dateParts.month && now.getDate() >= dateParts.day);
+      const startYear = birthdayPassed ? currentYear : currentYear - 1;
+      const source = String(dateParts.day)+String(dateParts.month)+String(startYear);
+      const number = reduceNumber(source.split("").reduce(function(total,digit){ return total+Number(digit); },0),false);
+      const endDate = new Date(startYear+1,dateParts.month-1,dateParts.day);
+      endDate.setDate(endDate.getDate()-1);
+      return {number:number,startYear:startYear,endDate:endDate};
+    }
+
+    function formatDate(date){
+      return String(date.getDate()).padStart(2,"0")+"/"+String(date.getMonth()+1).padStart(2,"0")+"/"+date.getFullYear();
+    }
+
+    const fieldDefinitions = [
+      {key:"motivacao",property:"motivation",label:"Motivação",about:"O que existe por dentro e move seus desejos"},
+      {key:"impressao",property:"impression",label:"Impressão",about:"Como sua energia chega nas pessoas"},
+      {key:"expressao",property:"expression",label:"Expressão",about:"Como o nome organiza sua força no mundo"},
+      {key:"destino",property:"destiny",label:"Destino",about:"O caminho indicado pela data de nascimento"},
+      {key:"ano",property:"personalYear",label:"Ano Pessoal",about:"O ciclo que está ativo agora"}
+    ];
+
+    const form = document.getElementById("numerologyForm");
+    const birthDateInput = document.getElementById("birthDate");
+
+    birthDateInput.addEventListener("input",function(){
+      const digits = birthDateInput.value.replace(/\D/g,"").slice(0,8);
+      birthDateInput.value = digits.length > 4
+        ? digits.slice(0,2)+"/"+digits.slice(2,4)+"/"+digits.slice(4)
+        : digits.length > 2 ? digits.slice(0,2)+"/"+digits.slice(2) : digits;
+    });
+
+    form.addEventListener("submit",function(event){
+      event.preventDefault();
+      const birthName = document.getElementById("birthName").value.trim();
+      const currentName = document.getElementById("currentName").value.trim();
+      const dateParts = parseDate(birthDateInput.value.trim());
+      const error = document.getElementById("formError");
+
+      if(validNameCharacters(birthName).length < 2){
+        error.textContent = "Preencha seu nome completo de nascimento.";
+        return;
+      }
+      if(!dateParts){
+        error.textContent = "Preencha uma data de nascimento válida no formato DD/MM/AAAA.";
+        return;
+      }
+      error.textContent = "";
+      showResult(birthName,currentName,dateParts);
+    });
+
+    function showResult(birthName,currentName,dateParts){
+      const birthCalculation = calculateName(birthName);
+      const destiny = calculateDestiny(dateParts);
+      const personal = calculatePersonalYear(dateParts);
+      const focus = form.querySelector("input[name='focus']:checked").value;
+      const firstName = birthName.split(/\s+/)[0];
+      const values = {
+        motivation:birthCalculation.motivation,
+        impression:birthCalculation.impression,
+        expression:birthCalculation.expression,
+        destiny:destiny,
+        personalYear:personal.number
+      };
+
+      document.getElementById("resultTitle").textContent = firstName+", seus números começaram a falar.";
+      document.getElementById("resultLead").textContent = "Você escolheu olhar "+focus.toLowerCase()+". Esta amostra abre cinco campos e a Pirâmide do seu nome de nascimento.";
+
+      document.getElementById("numbersGrid").innerHTML = fieldDefinitions.map(function(field){
+        return "<article class='number-card'><span>"+field.label+"</span><strong>"+values[field.property]+"</strong></article>";
+      }).join("");
+
+      document.getElementById("readingCards").innerHTML = fieldDefinitions.map(function(field){
+        const number = values[field.property];
+        const text = interpretations[field.key][number] || "";
+        const period = field.key === "ano"
+          ? "<p class='period'>Ciclo de "+String(dateParts.day).padStart(2,"0")+"/"+String(dateParts.month).padStart(2,"0")+"/"+personal.startYear+" até "+formatDate(personal.endDate)+"</p>"
+          : "";
+        return "<article class='reading-card'><div class='reading-number'>"+number+"</div><div class='reading-copy'><small>"+field.about+"</small><h5>"+field.label+" "+number+"</h5><p>"+text+"</p>"+period+"</div></article>";
+      }).join("");
+
+      renderPyramid(birthCalculation.rows,birthCalculation.runs);
+      renderSequences(birthCalculation.runs);
+      renderComparison(birthName,currentName,birthCalculation);
+
+      const sequenceSummary = uniqueSequenceCodes(birthCalculation.runs).join(", ") || "nenhuma sequência tripla";
+      const message = [
+        "Oi, Rarí! Fiz a amostra do Mapa Numerológico no seu site.",
+        "",
+        "Nome: "+birthName,
+        "Motivação "+values.motivation+", Impressão "+values.impression+", Expressão "+values.expression+", Destino "+values.destiny+" e Ano Pessoal "+values.personalYear+".",
+        "Pirâmide: "+sequenceSummary+".",
+        "Quero investigar meu mapa completo e testar a correção do meu nome."
+      ].join("\n");
+      document.getElementById("resultWhats").href = "https://wa.me/"+whatsappNumber+"?text="+encodeURIComponent(message);
+
+      document.getElementById("sampleStart").hidden = true;
+      document.getElementById("sampleResult").hidden = false;
+      document.getElementById("sampleResult").scrollIntoView({behavior:"smooth",block:"start"});
+    }
+
+    function sequenceCells(runs){
+      const set = new Set();
+      runs.forEach(function(run){
+        for(let index=run.start;index<run.start+run.length;index+=1){
+          set.add((run.line-1)+"-"+index);
+        }
+      });
+      return set;
+    }
+
+    function renderPyramid(rows,runs){
+      const highlighted = sequenceCells(runs);
+      const canvas = document.getElementById("pyramidCanvas");
+      canvas.innerHTML = rows.map(function(row,rowIndex){
+        const cells = row.map(function(number,index){
+          const active = highlighted.has(rowIndex+"-"+index);
+          return "<span class='pyramid-cell"+(active?" sequence":"")+"'>"+number+"</span>";
+        }).join("");
+        return "<div class='pyramid-row'>"+cells+"</div>";
+      }).join("");
+      document.getElementById("pyramidApex").textContent = rows[rows.length-1][0];
+    }
+
+    function uniqueSequenceCodes(runs){
+      return Array.from(new Set(runs.map(function(run){ return String(run.number).repeat(3); })));
+    }
+
+    function renderSequences(runs){
+      const grid = document.getElementById("sequenceGrid");
+      const codes = uniqueSequenceCodes(runs);
+      if(!codes.length){
+        grid.innerHTML = "<div class='sequence-clear'>Nenhuma sequência tripla de 111 a 999 apareceu nesta Pirâmide. O mapa completo ainda investiga ausências, excessos, Lições Cármicas, Dívidas Cármicas e o nome usado atualmente.</div>";
+        return;
+      }
+      grid.innerHTML = codes.map(function(code){
+        const occurrences = runs.filter(function(run){ return String(run.number).repeat(3) === code; });
+        const places = occurrences.map(function(run){ return "linha "+run.line+" com "+run.length+" repetições"; }).join("; ");
+        return "<article class='sequence-card'><strong>"+code+"</strong><small>"+places+"</small><p>"+interpretations.sequencias[code]+"</p></article>";
+      }).join("");
+    }
+
+    function renderComparison(birthName,currentName,birthCalculation){
+      const section = document.getElementById("nameComparison");
+      if(!currentName || currentName.toLocaleUpperCase("pt-BR") === birthName.toLocaleUpperCase("pt-BR")){
+        section.hidden = true;
+        return;
+      }
+      const currentCalculation = calculateName(currentName);
+      const birthSequences = uniqueSequenceCodes(birthCalculation.runs).join(", ") || "nenhuma tripla";
+      const currentSequences = uniqueSequenceCodes(currentCalculation.runs).join(", ") || "nenhuma tripla";
+      document.getElementById("compareGrid").innerHTML =
+        "<article class='compare-card'><small>Nome de nascimento</small><strong>Expressão "+birthCalculation.expression+"</strong><p>"+birthSequences+"</p></article>"+
+        "<article class='compare-card'><small>Nome usado hoje</small><strong>Expressão "+currentCalculation.expression+"</strong><p>"+currentSequences+"</p></article>";
+      section.hidden = false;
+    }
+
+    document.getElementById("restartSample").addEventListener("click",function(){
+      document.getElementById("sampleResult").hidden = true;
+      document.getElementById("sampleStart").hidden = false;
+      document.getElementById("sampleStart").scrollIntoView({behavior:"smooth",block:"start"});
+    });
+
+    const layers = {
+      core:{
+        number:"Camada 01",title:"Seu núcleo numerológico",lead:"A estrutura que mostra quem você é, como chega ao mundo e qual caminho sua data organiza.",
+        kicker:"Base do mapa",detail:"Quem você é e o que veio realizar",description:"Esta camada reúne os números centrais do nome e da data, sem separar sua essência da forma como você vive.",
+        items:["Motivação","Impressão","Expressão","Destino","Missão","Dia do Nascimento","Número Psíquico","Resposta Subconsciente"]
+      },
+      patterns:{
+        number:"Camada 02",title:"Seus padrões e carmas",lead:"O que se repete, o que falta, o que pesa e aquilo que precisa ser desenvolvido.",
+        kicker:"Estrutura oculta",detail:"A parte que não aparece numa soma simples",description:"Aqui entram as concentrações, ausências e contas que continuam organizando experiências até serem reconhecidas.",
+        items:["Pirâmide da Vida","Sequências Negativas","Dívidas Cármicas","Lições Cármicas","Tendências Ocultas","Excessos e deficiências","Talento Oculto","Grau de Ascensão"]
+      },
+      cycles:{
+        number:"Camada 03",title:"Seus ciclos e seu tempo",lead:"A vida não pede a mesma coisa o tempo todo. O mapa mostra qual fase está ativa e quando ela muda.",
+        kicker:"Tempo numerológico",detail:"Onde você está dentro da própria jornada",description:"Os ciclos e momentos decisivos organizam os períodos da vida com suas datas e exigências.",
+        items:["Primeiro Ciclo de Vida","Segundo Ciclo de Vida","Terceiro Ciclo de Vida","Quatro Momentos Decisivos","Desafios de Vida","Ano Pessoal","Mês Pessoal","Dia Pessoal"]
+      },
+      life:{
+        number:"Camada 04",title:"Sua vida prática",lead:"Como seus números atravessam trabalho, relações, escolhas, prosperidade e convivência.",
+        kicker:"Aplicação do mapa",detail:"Os números dentro da vida que você vive",description:"Esta camada aproxima a matemática das áreas em que você precisa tomar decisões e se posicionar.",
+        items:["Potencialidade Profissional","Harmonia Conjugal","Relações Inter valores","Números Harmônicos","Cores Favoráveis","Dias do Mês Favoráveis","Arcanos Numerológicos","Direção para o ciclo atual"]
+      },
+      name:{
+        number:"Camada 05",title:"Seu nome e sua correção",lead:"O mapa compara o nome recebido, o nome usado e as possibilidades que podem acompanhar sua nova fase.",
+        kicker:"Correção calculada",detail:"Não basta trocar letras. É preciso recalcular tudo.",description:"Cada opção passa novamente pelo núcleo e pela Pirâmide antes de ser indicada para uso.",
+        items:["Energia do nome de nascimento","Energia do nome atual","Pirâmide de cada opção","Sequências de cada opção","Até 3 correções completas","Nome social e profissional","Nome digital","Orientação de grafia e uso"]
+      }
+    };
+
+    document.querySelectorAll(".layer-tab").forEach(function(tab){
+      tab.addEventListener("click",function(){
+        const key = tab.dataset.layer;
+        const layer = layers[key];
+        document.querySelectorAll(".layer-tab").forEach(function(item){
+          const active = item.dataset.layer === key;
+          item.classList.toggle("active",active);
+          item.setAttribute("aria-selected",active ? "true" : "false");
+        });
+        document.getElementById("layerNumber").textContent = layer.number;
+        document.getElementById("layerTitle").textContent = layer.title;
+        document.getElementById("layerLead").textContent = layer.lead;
+        document.getElementById("layerKicker").textContent = layer.kicker;
+        document.getElementById("layerDetailTitle").textContent = layer.detail;
+        document.getElementById("layerDescription").textContent = layer.description;
+        document.getElementById("layerItems").innerHTML = layer.items.map(function(item){ return "<div>"+item+"</div>"; }).join("");
+      });
+    });
+
+    document.getElementById("layerItems").innerHTML = layers.core.items.map(function(item){ return "<div>"+item+"</div>"; }).join("");
+  </script>
+</body>
+</html>
