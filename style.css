@@ -50,3 +50,16 @@ footer{background:#082a24;color:#fff;padding:28px 0 72px}footer .wrap{display:fl
 @media(max-width:540px){
 .wrap{width:min(100% - 22px,700px)}.top-whats{font-size:9px}h1{font-size:49px}h2{font-size:37px}.hero-copy p{font-size:14px}.hero .btn{width:100%}.hero-photo{min-height:270px}.hero-photo>img{width:72%;max-width:230px}.live-chip{right:0;bottom:0}.live{padding:46px 0}.price strong{font-size:45px}.pix-btn{grid-template-columns:auto 1fr}.pix-btn small{display:none}.services{padding:54px 0}.section-title p{font-size:13px}.service-card{display:block}.service-card>img{height:180px;min-height:0}.service-copy{padding:18px}.service-copy h3{font-size:30px}.service-copy p{font-size:11px}.community{padding:48px 0}.wa-chat{min-height:210px}.library{padding:52px 0}.material{grid-template-columns:105px 1fr;gap:13px}.material-cover{width:105px}.material-copy h3{font-size:20px}.about{grid-template-columns:1fr;padding:52px 0}.about-photo{max-width:230px}.about-copy h2{font-size:36px}footer{padding-bottom:74px}.mobile-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;position:fixed;left:10px;right:10px;bottom:8px;z-index:55;padding:5px;background:rgba(255,250,242,.92);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow)}.mobile-bar a{text-align:center;font-size:9px;font-weight:800;padding:9px 3px;border-radius:9px}.mobile-bar a:nth-child(1){background:var(--terra);color:#fff}.mobile-bar a:nth-child(2){background:var(--gold);color:var(--green)}.mobile-bar a:nth-child(3){background:var(--green);color:#fff}
 }
+
+/* Mantém as capas contidas nos cartões, inclusive quando o navegador restaura CSS antigo. */
+.material{overflow:hidden}
+.material-copy{min-width:0}
+@media(max-width:540px){
+  .library-grid{gap:12px}
+  .material{grid-template-columns:92px minmax(0,1fr);gap:12px;padding:12px;align-items:center}
+  .material-cover{width:92px;height:138px;max-width:92px;object-fit:cover;border-radius:11px}
+  .material-copy h3{font-size:20px;line-height:1.02;margin:4px 0 7px}
+  .material-copy p{font-size:10px;line-height:1.45;margin-bottom:10px}
+  .material-actions{gap:5px}
+  .material-actions a{padding:7px 8px;font-size:8px;border-radius:8px}
+}
