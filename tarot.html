@@ -1,13 +1,1251 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tarot | Rarí Fávaro</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="extras.css"><style>
-.detail{min-height:100vh;padding:70px 0 100px}.back{font-size:12px;font-weight:800;color:#c96942}.detail-card{margin-top:30px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:42px;box-shadow:var(--shadow)}.detail h1{font-size:clamp(58px,8vw,88px)}.detail p{font-size:17px;line-height:1.7;color:#5c6e69}.detail ul{list-style:none;padding:0;margin:28px 0}.detail li{padding:12px 0;border-bottom:1px solid var(--line);font-weight:600}.detail-side{background:var(--green);color:white;border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:center}.detail-side h3{color:white;font-size:42px}.detail-side p{color:rgba(255,255,255,.7);font-size:14px}.service-price{font-family:"Cormorant Garamond",serif;font-size:38px;margin:16px 0 4px;color:white}@media(max-width:760px){.detail-card{grid-template-columns:1fr;padding:24px}}
-.detail-image{width:100%;height:210px;object-fit:cover;border-radius:16px;margin-bottom:24px} </style></head><body>
-<header class="top"><a href="index.html" class="logo"><span class="sigil">✦</span><span><strong>Rarí Fávaro</strong><small>Tarot & atendimentos</small></span></a><a href="https://wa.me/5521975003419" class="top-whats">WhatsApp</a></header>
-<main class="detail"><div class="wrap"><a class="back" href="index.html">← VOLTAR PARA O INÍCIO</a>
-<div class="detail-card"><div><span class="kicker">Leitura particular</span><h1>Tarot</h1><p>Tem coisa que uma pergunta rápida resolve. Tem coisa que não. No atendimento particular eu abro o contexto, separo sentimento, intenção, atitude e tendência e vou direto no que realmente importa.</p><ul><li>Amor, sentimentos e relações</li><li>Decisões que você não quer tomar no escuro</li><li>Trabalho, dinheiro e direção</li><li>Contexto de verdade, não resposta jogada</li><li>Você termina sabendo o que o jogo mostrou</li></ul></div>
-<div class="detail-side"><img class="detail-image" src="tarot-servico.jpg" alt="Cartas de Tarot"><span class="kicker pale">Contratação</span><h3>Quer abrir esse jogo direito?</h3><p>Me chama no WhatsApp. Eu te explico a modalidade, confirmo a disponibilidade e a gente já organiza sua leitura.</p>
-<a class="btn terracotta" target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20contratar%20uma%20leitura%20particular%20de%20Tarot.">Quero abrir meu jogo</a></div></div></div></main></body></html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143f37">
+  <meta name="description" content="Consultas particulares de Tarot com Rarí Fávaro. Perguntas objetivas e leituras aprofundadas por áudio.">
+  <title>Tarot | Rarí Fávaro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --paper:#fffaf2;
+      --cream:#f7efe3;
+      --green:#143f37;
+      --green-deep:#092f29;
+      --green-soft:#2e5b50;
+      --terra:#bd6848;
+      --gold:#d6bb82;
+      --ink:#173a32;
+      --muted:#697a73;
+      --line:rgba(23,58,50,.14);
+      --shadow:0 24px 70px rgba(36,30,20,.12);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:"DM Sans",sans-serif;
+    }
+    button,a,input,textarea{font:inherit}
+    button{border:0}
+    a{text-decoration:none;color:inherit}
+    [hidden]{display:none!important}
+    .wrap{width:min(980px,calc(100% - 28px));margin:auto}
+    .kicker{
+      display:inline-block;
+      color:var(--terra);
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+
+    .top{
+      position:sticky;
+      top:7px;
+      z-index:30;
+      width:min(1120px,calc(100% - 18px));
+      margin:7px auto 0;
+      padding:10px 12px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      border:1px solid var(--line);
+      border-radius:17px;
+      background:rgba(255,250,242,.94);
+      backdrop-filter:blur(16px);
+      box-shadow:0 8px 26px rgba(0,0,0,.05);
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand-mark{display:grid;place-items:center;color:var(--green);font-size:24px;line-height:1}
+    .brand strong{display:block;font-family:"Fraunces",serif;font-size:22px;line-height:1}
+    .brand small{
+      display:block;
+      margin-top:4px;
+      color:var(--muted);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .top-link{
+      padding:10px 16px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      font-size:10px;
+      font-weight:800;
+    }
+
+    .hero{padding:54px 0 34px}
+    .hero-card{
+      min-height:560px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:44px;
+      align-items:center;
+      padding:56px;
+      border-radius:32px;
+      background:
+        radial-gradient(circle at 80% 10%,rgba(255,255,255,.16),transparent 31%),
+        linear-gradient(145deg,var(--green),var(--green-deep));
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .hero-copy h1{
+      margin:10px 0 18px;
+      color:#fff;
+      font-family:"Fraunces",serif;
+      font-size:clamp(56px,7.6vw,86px);
+      line-height:.91;
+      letter-spacing:-.05em;
+    }
+    .hero-copy p{
+      max-width:520px;
+      margin:0;
+      color:rgba(255,255,255,.76);
+      font-size:15px;
+      line-height:1.7;
+    }
+    .hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
+    .primary-btn,.secondary-btn{
+      min-height:52px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 19px;
+      border-radius:14px;
+      cursor:pointer;
+      font-size:11px;
+      font-weight:800;
+      transition:transform .18s ease,background .18s ease;
+    }
+    .primary-btn{background:var(--gold);color:var(--green-deep)}
+    .secondary-btn{border:1px solid rgba(255,255,255,.18);color:#fff}
+    .primary-btn:hover,.secondary-btn:hover{transform:translateY(-2px)}
+    .hero-visual{
+      position:relative;
+      min-height:420px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.13);
+      border-radius:210px 210px 26px 26px;
+      background:rgba(255,255,255,.05);
+    }
+    .hero-visual img{width:100%;height:100%;min-height:420px;display:block;object-fit:cover}
+    .hero-visual:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,transparent 45%,rgba(9,47,41,.83));
+    }
+    .visual-note{
+      position:absolute;
+      z-index:2;
+      left:24px;
+      right:24px;
+      bottom:23px;
+      color:rgba(255,255,255,.82);
+      font-family:"Fraunces",serif;
+      font-size:18px;
+      line-height:1.45;
+    }
+
+    .reading{padding:66px 0 76px}
+    .reading-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+    .reading h2,.section-head h2,.depth-copy h2,.steps-copy h2{
+      margin:8px 0 15px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:clamp(42px,6vw,66px);
+      line-height:.96;
+      letter-spacing:-.04em;
+    }
+    .reading-copy>p{
+      margin:0 0 13px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.72;
+    }
+    .reading-note{
+      padding:20px;
+      border-radius:18px;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:"Fraunces",serif;
+      font-size:20px;
+      line-height:1.5;
+    }
+    .reading-points{display:grid;gap:10px}
+    .reading-point{
+      display:grid;
+      grid-template-columns:38px 1fr;
+      gap:13px;
+      align-items:start;
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+    }
+    .reading-point span{
+      width:36px;
+      height:36px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--cream);
+      color:var(--terra);
+      font-family:"Fraunces",serif;
+      font-size:13px;
+      font-weight:800;
+    }
+    .reading-point strong{
+      display:block;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:22px;
+      line-height:1.05;
+    }
+    .reading-point p{margin:6px 0 0;color:var(--muted);font-size:11px;line-height:1.5}
+
+    .quick-section{
+      position:relative;
+      overflow:hidden;
+      padding:78px 0 88px;
+      background:var(--cream);
+    }
+    .section-head{max-width:720px;margin-bottom:30px}
+    .section-head p{margin:0;color:var(--muted);font-size:14px;line-height:1.68}
+    .quick-shell{
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:#fff;
+      box-shadow:0 16px 46px rgba(36,30,20,.08);
+    }
+    .quick-tabs{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:7px;
+      padding:7px;
+      background:var(--paper);
+      border-bottom:1px solid var(--line);
+    }
+    .quick-tab{
+      min-height:54px;
+      padding:10px;
+      border-radius:14px;
+      background:transparent;
+      color:var(--muted);
+      cursor:pointer;
+      font-size:11px;
+      font-weight:800;
+      transition:background .18s ease,color .18s ease,transform .18s ease;
+    }
+    .quick-tab small{display:block;margin-top:3px;font-size:8px;font-weight:700;opacity:.72}
+    .quick-tab.active{background:var(--green);color:#fff}
+    .quick-tab:hover{transform:translateY(-1px)}
+    .quick-content{
+      display:grid;
+      grid-template-columns:.82fr 1.18fr;
+      min-height:510px;
+    }
+    .quick-summary{
+      padding:42px 36px;
+      background:
+        radial-gradient(circle at 15% 88%,rgba(214,187,130,.16),transparent 31%),
+        linear-gradient(150deg,var(--green),var(--green-deep));
+      color:#fff;
+    }
+    .quick-summary small{
+      display:block;
+      color:#f4c9b8;
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+    .quick-summary h3{
+      margin:9px 0 12px;
+      color:#fff;
+      font-family:"Fraunces",serif;
+      font-size:39px;
+      line-height:1;
+    }
+    .quick-summary>p{
+      margin:0;
+      color:rgba(255,255,255,.72);
+      font-size:12px;
+      line-height:1.67;
+    }
+    .quick-price{
+      margin:26px 0 19px;
+      padding:18px 0;
+      border-top:1px solid rgba(255,255,255,.13);
+      border-bottom:1px solid rgba(255,255,255,.13);
+    }
+    .quick-price span{
+      display:block;
+      color:rgba(255,255,255,.55);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+    .quick-price strong{
+      display:block;
+      margin-top:5px;
+      color:#fff;
+      font-family:"Fraunces",serif;
+      font-size:55px;
+      line-height:1;
+    }
+    .quick-benefits{display:grid;gap:9px}
+    .quick-benefits div{
+      display:grid;
+      grid-template-columns:22px 1fr;
+      gap:9px;
+      align-items:start;
+      color:rgba(255,255,255,.76);
+      font-size:10px;
+      line-height:1.45;
+    }
+    .quick-benefits b{
+      width:21px;
+      height:21px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:rgba(214,187,130,.15);
+      color:var(--gold);
+      font-size:9px;
+    }
+    .question-form{padding:40px}
+    .form-intro h3{
+      margin:7px 0 8px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:32px;
+      line-height:1.05;
+    }
+    .form-intro p{margin:0 0 23px;color:var(--muted);font-size:11px;line-height:1.6}
+    .field{display:grid;gap:7px;margin-bottom:13px}
+    .field label{
+      color:var(--green);
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .field input,.field textarea{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:13px;
+      outline:none;
+      background:var(--paper);
+      color:var(--ink);
+      font-size:12px;
+      transition:border-color .18s ease,box-shadow .18s ease;
+    }
+    .field input{height:48px;padding:0 14px}
+    .field textarea{min-height:86px;padding:13px 14px;resize:vertical;line-height:1.5}
+    .field input:focus,.field textarea:focus{
+      border-color:var(--terra);
+      box-shadow:0 0 0 3px rgba(189,104,72,.1);
+    }
+    .question-form .primary-btn{
+      width:100%;
+      margin-top:7px;
+      background:var(--green);
+      color:#fff;
+    }
+    .form-note{
+      min-height:17px;
+      margin:9px 0 0;
+      color:var(--terra);
+      font-size:9px;
+      font-weight:700;
+      text-align:center;
+    }
+    .privacy{
+      margin:13px 0 0;
+      color:var(--muted);
+      font-size:8px;
+      line-height:1.5;
+      text-align:center;
+    }
+
+    .special-readings{padding:76px 0 84px}
+    .special-box{
+      overflow:hidden;
+      margin-top:28px;
+      border:1px solid var(--line);
+      border-radius:25px;
+      background:#fff;
+      box-shadow:0 16px 46px rgba(36,30,20,.07);
+    }
+    .special-tabs{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:7px;
+      padding:7px;
+      background:var(--cream);
+      border-bottom:1px solid var(--line);
+    }
+    .special-tab{
+      min-height:52px;
+      padding:10px;
+      border-radius:13px;
+      background:transparent;
+      color:var(--muted);
+      cursor:pointer;
+      font-size:11px;
+      font-weight:800;
+      transition:background .18s ease,color .18s ease,transform .18s ease;
+    }
+    .special-tab.active{background:var(--green);color:#fff}
+    .special-tab:hover{transform:translateY(-1px)}
+    .special-content{display:grid;grid-template-columns:.72fr 1.28fr;min-height:455px}
+    .special-value{
+      padding:38px 32px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      background:
+        radial-gradient(circle at 20% 84%,rgba(214,187,130,.16),transparent 33%),
+        linear-gradient(145deg,var(--green),var(--green-deep));
+      color:#fff;
+    }
+    .special-value small{
+      color:#f4c9b8;
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .special-value strong{
+      display:block;
+      margin:8px 0 7px;
+      color:#fff;
+      font-family:"Fraunces",serif;
+      font-size:56px;
+      line-height:1;
+    }
+    .special-value p{margin:0;color:rgba(255,255,255,.68);font-size:10px;line-height:1.5}
+    .special-value .primary-btn{width:100%;margin-top:23px;background:var(--gold);color:var(--green-deep)}
+    .special-detail{padding:37px}
+    .special-detail h3{
+      margin:7px 0 10px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:39px;
+      line-height:1;
+    }
+    .special-detail>p{margin:0;color:var(--muted);font-size:12px;line-height:1.67}
+    .area-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:22px}
+    .area-list div{
+      padding:11px 12px;
+      border-radius:12px;
+      background:var(--cream);
+      color:var(--ink);
+      font-size:9px;
+      font-weight:700;
+      line-height:1.4;
+    }
+    .special-note{
+      margin:18px 0 0;
+      padding:14px 15px;
+      border-left:2px solid var(--terra);
+      background:rgba(247,239,227,.55);
+      color:var(--muted);
+      font-size:10px;
+      line-height:1.55;
+    }
+    .fast-head{margin-top:52px}
+    .fast-head h3{
+      margin:7px 0 9px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:38px;
+      line-height:1;
+    }
+    .fast-head p{max-width:670px;margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+    .fast-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+    .fast-card{
+      min-height:275px;
+      display:flex;
+      flex-direction:column;
+      padding:20px;
+      border:1px solid var(--line);
+      border-radius:17px;
+      background:#fff;
+    }
+    .fast-card small{
+      color:var(--terra);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+    }
+    .fast-card h4{
+      margin:8px 0 8px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:24px;
+      line-height:1.02;
+    }
+    .fast-card p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}
+    .fast-card strong{
+      display:block;
+      margin:17px 0 13px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:29px;
+      line-height:1;
+    }
+    .fast-card .primary-btn{
+      width:100%;
+      min-height:44px;
+      margin-top:auto;
+      padding:11px 9px;
+      background:var(--green);
+      color:#fff;
+      font-size:9px;
+    }
+    .field-picker{
+      display:grid;
+      gap:6px;
+      margin-top:10px;
+    }
+    .field-picker[hidden]{display:none}
+    .field-picker span{
+      display:block;
+      margin-bottom:2px;
+      color:var(--terra);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .field-choice{
+      min-height:35px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px;
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:var(--cream);
+      color:var(--green);
+      cursor:pointer;
+      font-size:8px;
+      font-weight:800;
+      text-align:center;
+      transition:background .18s ease,color .18s ease;
+    }
+    .field-choice:hover{background:var(--green);color:#fff}
+
+    .depth{padding:78px 0 86px;background:var(--green);color:#fff}
+    .depth-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:54px;align-items:start}
+    .depth-copy h2{color:#fff}
+    .depth-copy p{margin:0;color:rgba(255,255,255,.7);font-size:13px;line-height:1.7}
+    .depth-note{
+      margin-top:20px;
+      padding:17px 0 17px 17px;
+      border-left:2px solid var(--gold);
+      color:rgba(255,255,255,.85);
+      font-family:"Fraunces",serif;
+      font-size:18px;
+      line-height:1.45;
+    }
+    .depth-box{overflow:hidden;border-radius:24px;background:var(--paper);color:var(--ink)}
+    .depth-tabs{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:7px;
+      padding:7px;
+      border-bottom:1px solid var(--line);
+      background:var(--cream);
+    }
+    .depth-tab{
+      min-height:50px;
+      border-radius:13px;
+      background:transparent;
+      color:var(--muted);
+      cursor:pointer;
+      font-size:11px;
+      font-weight:800;
+    }
+    .depth-tab.active{background:var(--terra);color:#fff}
+    .depth-panel{padding:34px}
+    .depth-panel small{
+      display:block;
+      color:var(--terra);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+    .depth-panel h3{
+      margin:8px 0 10px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:38px;
+      line-height:1;
+    }
+    .depth-panel>p{margin:0;color:var(--muted);font-size:12px;line-height:1.67}
+    .depth-meta{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:9px;
+      margin:20px 0;
+    }
+    .depth-meta div{padding:14px;border-radius:13px;background:var(--cream)}
+    .depth-meta span{
+      display:block;
+      color:var(--terra);
+      font-size:7px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .depth-meta strong,.depth-meta p{display:block;margin:5px 0 0;color:var(--green)}
+    .depth-meta strong{font-family:"Fraunces",serif;font-size:27px}
+    .depth-meta p{font-size:10px;font-weight:700;line-height:1.35}
+    .depth-panel .primary-btn{width:100%;background:var(--green);color:#fff}
+
+    .steps-section{padding:78px 0}
+    .steps-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;align-items:start}
+    .steps-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.72}
+    .steps{display:grid;gap:10px}
+    .step{padding:21px;border:1px solid var(--line);border-radius:17px;background:#fff}
+    .step span{
+      display:block;
+      color:var(--terra);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .step h3{
+      margin:6px 0 7px;
+      color:var(--green);
+      font-family:"Fraunces",serif;
+      font-size:25px;
+    }
+    .step p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}
+
+    .final-call{padding:0 0 78px}
+    .final-card{
+      padding:36px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:30px;
+      align-items:center;
+      border-radius:23px;
+      background:var(--terra);
+      color:#fff;
+    }
+    .final-card h2{
+      margin:6px 0 9px;
+      color:#fff;
+      font-family:"Fraunces",serif;
+      font-size:36px;
+      line-height:1;
+    }
+    .final-card p{margin:0;color:rgba(255,255,255,.82);font-size:11px;line-height:1.6}
+    .final-card .primary-btn{min-width:220px;background:var(--green);color:#fff}
+
+    footer{padding:30px 0 44px;background:var(--green-deep);color:#fff}
+    footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    footer strong{font-family:"Fraunces",serif;font-size:20px}
+    footer span{font-size:10px;color:rgba(255,255,255,.6)}
+
+    .quick-tab:focus-visible,.depth-tab:focus-visible,.primary-btn:focus-visible,.secondary-btn:focus-visible{
+      outline:3px solid var(--gold);
+      outline-offset:3px;
+    }
+
+    @media(max-width:760px){
+      .brand small{display:none}
+      .hero{padding:36px 0 20px}
+      .hero-card{min-height:0;grid-template-columns:1fr;gap:27px;padding:30px 22px;border-radius:25px}
+      .hero-copy h1{font-size:52px}
+      .hero-copy p{font-size:13px}
+      .hero-actions{display:grid}
+      .hero-actions a{width:100%}
+      .hero-visual{min-height:330px}
+      .hero-visual img{min-height:330px}
+      .reading,.special-readings,.steps-section{padding:54px 0}
+      .reading-grid,.depth-grid,.steps-grid{grid-template-columns:1fr;gap:28px}
+      .reading-note{font-size:18px}
+      .quick-section,.depth{padding:58px 0 64px}
+      .quick-tabs{grid-template-columns:1fr}
+      .quick-tab{min-height:48px}
+      .quick-tab small{display:inline;margin-left:5px}
+      .quick-content{grid-template-columns:1fr}
+      .quick-summary{padding:31px 24px}
+      .quick-summary h3{font-size:33px}
+      .question-form{padding:29px 22px}
+      .special-tabs{grid-template-columns:1fr}
+      .special-content{grid-template-columns:1fr}
+      .special-value{padding:29px 23px}
+      .special-detail{padding:28px 22px}
+      .fast-grid{grid-template-columns:1fr 1fr}
+      .depth-panel{padding:28px 22px}
+      .depth-panel h3{font-size:34px}
+      .final-card{grid-template-columns:1fr;padding:28px 23px}
+      .final-card .primary-btn{width:100%}
+    }
+
+    @media(max-width:440px){
+      .top{top:5px}
+      .top-link{padding:9px 12px}
+      .hero-copy h1{font-size:47px}
+      .area-list,.fast-grid{grid-template-columns:1fr}
+      .depth-meta{grid-template-columns:1fr}
+      .section-head h2,.reading h2,.depth-copy h2,.steps-copy h2{font-size:43px}
+      footer .wrap{align-items:flex-start;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Voltar para o início">
+      <span class="brand-mark">✦</span>
+      <span><strong>Rarí Fávaro</strong><small>Tarô e direção</small></span>
+    </a>
+    <a class="top-link" href="https://wa.me/5521975003419" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="kicker" style="color:#f4c9b8">Consulta particular de Tarô</span>
+            <h1>Tem pergunta que pede resposta. Tem história que pede contexto.</h1>
+            <p>Você me conta o que está vivendo e eu abro o jogo para mostrar o que está por trás da situação, o movimento que ganha força e como você pode se posicionar agora.</p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#perguntas">Escolher minha consulta</a>
+              <a class="secondary-btn" href="#como-funciona">Entender como funciona</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="tarot-servico.jpg" alt="Cartas de Tarô">
+            <p class="visual-note">Uma leitura reservada, direta e feita para o seu momento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reading">
+      <div class="wrap reading-grid">
+        <div class="reading-copy">
+          <span class="kicker">Como eu leio</span>
+          <h2>Eu não te entrego uma resposta solta.</h2>
+          <p>Eu separo sentimento, intenção, atitude, bloqueio e tendência para você entender o que realmente está acontecendo.</p>
+          <p>A leitura não para na carta que saiu. Eu te explico como aquele movimento aparece na sua história e o que você pode fazer com o que foi revelado.</p>
+          <div class="reading-note">Você termina a consulta entendendo o jogo, não tentando decifrar o que eu quis dizer.</div>
+        </div>
+        <div class="reading-points">
+          <article class="reading-point">
+            <span>01</span>
+            <div><strong>Clareza</strong><p>Eu organizo a situação e mostro o que está misturado, escondido ou difícil de nomear.</p></div>
+          </article>
+          <article class="reading-point">
+            <span>02</span>
+            <div><strong>Contexto</strong><p>Você entende sentimentos, movimentos, possibilidades e os pontos que estão atravessando a questão.</p></div>
+          </article>
+          <article class="reading-point">
+            <span>03</span>
+            <div><strong>Direção</strong><p>Além de enxergar o que acontece, você percebe como pode se posicionar diante disso.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-section" id="perguntas">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Perguntas objetivas fora da live</span>
+          <h2>Escolha, preencha e me envie.</h2>
+          <p>Para quando você quer uma resposta direta e particular. Escolha quantas perguntas deseja fazer, escreva aqui e eu recebo tudo organizado no WhatsApp.</p>
+        </div>
+
+        <div class="quick-shell">
+          <div class="quick-tabs" role="tablist" aria-label="Quantidade de perguntas">
+            <button class="quick-tab active" type="button" role="tab" aria-selected="true" data-plan="one">1 pergunta <small>R$ 15</small></button>
+            <button class="quick-tab" type="button" role="tab" aria-selected="false" data-plan="two">2 perguntas <small>R$ 25</small></button>
+            <button class="quick-tab" type="button" role="tab" aria-selected="false" data-plan="three">3 perguntas <small>R$ 35</small></button>
+          </div>
+
+          <div class="quick-content">
+            <aside class="quick-summary">
+              <small id="quickKicker">Uma questão central</small>
+              <h3 id="quickTitle">1 pergunta objetiva</h3>
+              <p id="quickDescription">Para olhar uma dúvida específica e receber uma resposta direta, explicada e reservada.</p>
+              <div class="quick-price">
+                <span>Valor</span>
+                <strong id="quickPrice">R$ 15</strong>
+              </div>
+              <div class="quick-benefits">
+                <div><b>✓</b><span>Resposta particular fora da live</span></div>
+                <div><b>✓</b><span>Leitura enviada por áudio</span></div>
+                <div><b>✓</b><span>Orientação direta para cada pergunta</span></div>
+              </div>
+            </aside>
+
+            <form class="question-form" id="questionForm" novalidate>
+              <div class="form-intro">
+                <span class="kicker">Organize sua consulta</span>
+                <h3>Me conta o que você quer saber.</h3>
+                <p>Escreva seu nome e suas perguntas. Ao tocar no botão, seu WhatsApp abre com a mensagem pronta para me enviar.</p>
+              </div>
+              <div class="field">
+                <label for="clientName">Seu nome completo</label>
+                <input id="clientName" name="clientName" autocomplete="name" placeholder="Como você quer ser chamado">
+              </div>
+              <div id="questionFields"></div>
+              <button class="primary-btn" type="submit" id="sendQuestions">Enviar minha pergunta no WhatsApp</button>
+              <p class="form-note" id="formNote" aria-live="polite"></p>
+              <p class="privacy">O que você escrever aqui só será usado para montar a mensagem que abrirá no seu WhatsApp.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="special-readings" id="leituras">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Leituras especiais</span>
+          <h2>Escolha o mapa que conversa com o seu momento.</h2>
+          <p>Tem leitura para organizar o mês, cuidar da vida profissional ou abrir um ciclo inteiro pelas 12 casas astrológicas.</p>
+        </div>
+
+        <div class="special-box">
+          <div class="special-tabs" role="tablist" aria-label="Leituras especiais">
+            <button class="special-tab active" type="button" role="tab" aria-selected="true" data-special="monthly">Leitura Mensal</button>
+            <button class="special-tab" type="button" role="tab" aria-selected="false" data-special="professional">Profissional</button>
+            <button class="special-tab" type="button" role="tab" aria-selected="false" data-special="mandala">Mandala Astrológica</button>
+          </div>
+
+          <div class="special-content" role="tabpanel">
+            <aside class="special-value">
+              <small id="specialFormat">Leitura do seu próximo mês</small>
+              <strong id="specialPrice">R$ 97</strong>
+              <p id="specialDelivery">Leitura completa enviada por áudio</p>
+              <a class="primary-btn" id="specialWhats" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20contratar%20a%20Leitura%20Mensal%20por%20R%24%2097.">Quero escolher essa leitura</a>
+            </aside>
+            <div class="special-detail">
+              <span class="kicker" id="specialKicker">Seu mês por inteiro</span>
+              <h3 id="specialTitle">Leitura Mensal</h3>
+              <p id="specialDescription">Eu abro as principais áreas do seu próximo mês para mostrar onde existe movimento, o que pede atenção e como você pode atravessar esse período com mais consciência.</p>
+              <div class="area-list" id="specialAreas">
+                <div>Energia central do mês</div>
+                <div>Amor e relacionamentos</div>
+                <div>Trabalho e vida profissional</div>
+                <div>Dinheiro e oportunidades</div>
+                <div>Vida pessoal e emocional</div>
+                <div>Espiritualidade e intuição</div>
+                <div>Desafio do período</div>
+                <div>Conselho e direção</div>
+              </div>
+              <p class="special-note" id="specialNote">A leitura acompanha o ciclo que começa agora e ajuda você a reconhecer os movimentos mais importantes do período.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fast-head">
+          <span class="kicker">Leituras rápidas</span>
+          <h3>Um jogo pequeno para uma questão que está pedindo clareza agora.</h3>
+          <p>Você escolhe o tema e eu faço uma abertura direta, com começo, meio e direção. A resposta é particular e enviada por áudio.</p>
+        </div>
+
+        <div class="fast-grid">
+          <article class="fast-card">
+            <small>Uma carta para cada dia</small>
+            <h4>Próximos 7 dias</h4>
+            <p>Eu abro os sete dias, encontro o dia de maior abertura, o ponto de atenção, o conselho central e aprofundo o campo que você escolher.</p>
+            <strong>R$ 25</strong>
+            <button class="primary-btn" type="button" id="openSevenFields">Escolher meu campo</button>
+            <div class="field-picker" id="sevenFieldPicker" hidden>
+              <span>Qual campo você quer acompanhar?</span>
+              <button class="field-choice" type="button" data-seven-field="Geral">Geral</button>
+              <button class="field-choice" type="button" data-seven-field="Amor e relacionamentos">Amor e relacionamentos</button>
+              <button class="field-choice" type="button" data-seven-field="Profissional e financeiro">Profissional e financeiro</button>
+              <button class="field-choice" type="button" data-seven-field="Emocional e energético">Emocional e energético</button>
+            </div>
+          </article>
+          <article class="fast-card">
+            <small>Relacionamentos</small>
+            <h4>Amor agora</h4>
+            <p>Sua energia, a energia da outra pessoa, o vínculo e o próximo movimento da relação.</p>
+            <strong>R$ 35</strong>
+            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20a%20leitura%20Amor%20Agora%20por%20R%24%2035.">Quero essa leitura</a>
+          </article>
+          <article class="fast-card">
+            <small>Decisão</small>
+            <h4>Entre dois caminhos</h4>
+            <p>O que cada escolha movimenta, seus pontos de atenção e qual direção ganha mais força.</p>
+            <strong>R$ 35</strong>
+            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20a%20leitura%20Entre%20Dois%20Caminhos%20por%20R%24%2035.">Quero essa leitura</a>
+          </article>
+          <article class="fast-card">
+            <small>Vida material</small>
+            <h4>Trabalho e dinheiro</h4>
+            <p>Seu momento, o que trava, a oportunidade disponível e a direção prática para avançar.</p>
+            <strong>R$ 35</strong>
+            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20a%20leitura%20Trabalho%20e%20Dinheiro%20por%20R%24%2035.">Quero essa leitura</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="depth" id="aprofundar">
+      <div class="wrap depth-grid">
+        <div class="depth-copy">
+          <span class="kicker" style="color:#f4c9b8">Quando a pergunta é só a ponta</span>
+          <h2>Algumas histórias precisam de mais espaço.</h2>
+          <p>Se a sua questão tem várias camadas, não cabe numa resposta objetiva. Na consulta por ligação de áudio, a gente abre o contexto, acompanha os desdobramentos e entende o que o jogo revela enquanto a conversa acontece.</p>
+          <div class="depth-note">Você não precisa chegar sabendo qual consulta escolher. Me conta o que está vivendo e eu te ajudo.</div>
+        </div>
+
+        <div class="depth-box">
+          <div class="depth-tabs" role="tablist" aria-label="Consultas aprofundadas">
+            <button class="depth-tab active" type="button" role="tab" aria-selected="true" data-depth="directed">30 minutos</button>
+            <button class="depth-tab" type="button" role="tab" aria-selected="false" data-depth="deep">60 minutos</button>
+          </div>
+          <div class="depth-panel" role="tabpanel">
+            <small id="depthKicker">Uma área ou situação central</small>
+            <h3 id="depthTitle">Consulta direcionada</h3>
+            <p id="depthDescription">Para aprofundar uma situação, entender o que está por trás dela e acompanhar as perguntas que nascem dentro do mesmo tema.</p>
+            <div class="depth-meta">
+              <div><span>Investimento</span><strong id="depthPrice">R$ 97</strong></div>
+              <div><span>Formato</span><p id="depthFormat">30 minutos por ligação de áudio</p></div>
+            </div>
+            <a class="primary-btn" id="depthWhats" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20agendar%20a%20Consulta%20Direcionada%20de%2030%20minutos%20por%20R%24%2097.">Quero escolher essa consulta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section" id="como-funciona">
+      <div class="wrap steps-grid">
+        <div class="steps-copy">
+          <span class="kicker">Como funciona</span>
+          <h2>Simples, particular e sem enrolação.</h2>
+          <p>Você escolhe a profundidade que faz sentido, me envia sua questão e eu organizo o atendimento com você pelo WhatsApp.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span>Passo 1</span><h3>Você escolhe sua consulta</h3><p>Pergunta objetiva, consulta de 30 minutos ou consulta de 60 minutos.</p></article>
+          <article class="step"><span>Passo 2</span><h3>Me conta o que está vivendo</h3><p>Nas perguntas objetivas, você já preenche tudo na página. Nas consultas, a gente organiza o foco pelo WhatsApp.</p></article>
+          <article class="step"><span>Passo 3</span><h3>A gente confirma o atendimento</h3><p>Eu envio a forma de pagamento e, quando for uma consulta ao vivo, combinamos o melhor horário.</p></article>
+          <article class="step"><span>Passo 4</span><h3>Eu abro o jogo com você</h3><p>Você recebe uma leitura explicada, com contexto, direção e espaço para compreender o que apareceu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-call">
+      <div class="wrap">
+        <div class="final-card">
+          <div>
+            <span class="kicker" style="color:#fff">Ainda está em dúvida?</span>
+            <h2>Me conta o que está acontecendo.</h2>
+            <p>Eu te ajudo a escolher entre a pergunta objetiva e uma consulta mais profunda.</p>
+          </div>
+          <a class="primary-btn" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Estou%20na%20p%C3%A1gina%20do%20Tar%C3%B4%20e%20quero%20ajuda%20para%20escolher%20minha%20consulta." target="_blank" rel="noopener">Falar diretamente comigo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><strong>Rarí Fávaro</strong><span>rarifavaro.com.br</span></div>
+  </footer>
+
+  <script>
+    const whatsappNumber = "5521975003419";
+
+    const quickPlans = {
+      one: {
+        count: 1,
+        kicker: "Uma questão central",
+        title: "1 pergunta objetiva",
+        description: "Para olhar uma dúvida específica e receber uma resposta direta, explicada e reservada.",
+        price: "R$ 15"
+      },
+      two: {
+        count: 2,
+        kicker: "Duas questões para organizar",
+        title: "2 perguntas objetivas",
+        description: "Para olhar duas dúvidas ou dois pontos da mesma situação sem precisar entrar ao vivo.",
+        price: "R$ 25"
+      },
+      three: {
+        count: 3,
+        kicker: "Mais contexto para o seu momento",
+        title: "3 perguntas objetivas",
+        description: "Para abrir três questões e compreender melhor os movimentos que estão atravessando o seu momento.",
+        price: "R$ 35"
+      }
+    };
+
+    const depthPlans = {
+      directed: {
+        kicker: "Uma área ou situação central",
+        title: "Consulta direcionada",
+        description: "Para aprofundar uma situação, entender o que está por trás dela e acompanhar as perguntas que nascem dentro do mesmo tema.",
+        price: "R$ 97",
+        format: "30 minutos por ligação de áudio",
+        message: "Oi, Rarí! Quero agendar a Consulta Direcionada de 30 minutos por R$ 97."
+      },
+      deep: {
+        kicker: "Mais tempo para abrir todas as camadas",
+        title: "Consulta profunda",
+        description: "Para relações, ciclos repetidos, decisões importantes ou histórias com várias perguntas ligadas umas às outras.",
+        price: "R$ 147",
+        format: "60 minutos por ligação de áudio",
+        message: "Oi, Rarí! Quero agendar a Consulta Profunda de 60 minutos por R$ 147."
+      }
+    };
+
+    const specialPlans = {
+      monthly: {
+        format: "Leitura do seu próximo mês",
+        price: "R$ 97",
+        delivery: "Leitura completa enviada por áudio",
+        kicker: "Seu mês por inteiro",
+        title: "Leitura Mensal",
+        description: "Eu abro as principais áreas do seu próximo mês para mostrar onde existe movimento, o que pede atenção e como você pode atravessar esse período com mais consciência.",
+        areas: [
+          "Energia central do mês",
+          "Amor e relacionamentos",
+          "Trabalho e vida profissional",
+          "Dinheiro e oportunidades",
+          "Vida pessoal e emocional",
+          "Espiritualidade e intuição",
+          "Desafio do período",
+          "Conselho e direção"
+        ],
+        note: "A leitura acompanha o ciclo que começa agora e ajuda você a reconhecer os movimentos mais importantes do período.",
+        message: "Oi, Rarí! Quero contratar a Leitura Mensal por R$ 97."
+      },
+      professional: {
+        format: "Leitura direcionada para a carreira",
+        price: "R$ 97",
+        delivery: "Leitura completa enviada por áudio",
+        kicker: "Trabalho, dinheiro e posicionamento",
+        title: "Leitura Profissional",
+        description: "Uma abertura para entender seu momento profissional, reconhecer o que está travando seu crescimento e enxergar onde existe força, oportunidade e movimento.",
+        areas: [
+          "Seu momento profissional",
+          "Talentos e forças disponíveis",
+          "Bloqueios e pontos de atenção",
+          "Ambiente e relações de trabalho",
+          "Dinheiro e reconhecimento",
+          "Oportunidades próximas",
+          "Posicionamento necessário",
+          "Próximo passo prático"
+        ],
+        note: "Faz sentido para decisões de carreira, mudança de trabalho, projetos, vendas, crescimento e reposicionamento profissional.",
+        message: "Oi, Rarí! Quero contratar a Leitura Profissional por R$ 97."
+      },
+      mandala: {
+        format: "Um ano específico ou os próximos 12 meses",
+        price: "R$ 297",
+        delivery: "12 casas astrológicas + linha dos 12 meses",
+        kicker: "Uma visão completa do seu ciclo",
+        title: "Mandala Astrológica",
+        description: "Eu abro o Tarô pela estrutura simbólica das 12 casas astrológicas. Primeiro enxergamos cada área da sua vida. Depois eu abro a linha dos 12 meses para acompanhar como esse ciclo se movimenta no tempo.",
+        areas: [
+          "Casa 1: identidade e começos",
+          "Casa 2: dinheiro e recursos",
+          "Casa 3: comunicação e estudos",
+          "Casa 4: casa e família",
+          "Casa 5: amor e criatividade",
+          "Casa 6: rotina e bem-estar",
+          "Casa 7: relações e parcerias",
+          "Casa 8: transformações e trocas",
+          "Casa 9: expansão e espiritualidade",
+          "Casa 10: carreira e imagem",
+          "Casa 11: projetos e amizades",
+          "Casa 12: inconsciente e encerramentos"
+        ],
+        note: "Você escolhe se a Mandala será feita para um ano específico ou para os próximos 12 meses contados a partir da leitura.",
+        message: "Oi, Rarí! Quero contratar a Mandala Astrológica por R$ 297."
+      }
+    };
+
+    let selectedQuickPlan = "one";
+
+    const quickTabs = document.querySelectorAll(".quick-tab");
+    const questionFields = document.getElementById("questionFields");
+    const formNote = document.getElementById("formNote");
+
+    function renderQuestionFields(count){
+      const previousValues = Array.from(questionFields.querySelectorAll("textarea")).map(function(field){
+        return field.value;
+      });
+      questionFields.innerHTML = "";
+
+      for(let index = 0; index < count; index += 1){
+        const field = document.createElement("div");
+        field.className = "field";
+
+        const label = document.createElement("label");
+        label.setAttribute("for", "question" + (index + 1));
+        label.textContent = count === 1 ? "Sua pergunta" : "Pergunta " + (index + 1);
+
+        const textarea = document.createElement("textarea");
+        textarea.id = "question" + (index + 1);
+        textarea.name = "question" + (index + 1);
+        textarea.placeholder = "Escreva sua pergunta com suas palavras";
+        textarea.value = previousValues[index] || "";
+
+        field.appendChild(label);
+        field.appendChild(textarea);
+        questionFields.appendChild(field);
+      }
+
+      document.getElementById("sendQuestions").textContent = count === 1
+        ? "Enviar minha pergunta no WhatsApp"
+        : "Enviar minhas perguntas no WhatsApp";
+    }
+
+    function selectQuickPlan(planKey){
+      selectedQuickPlan = planKey;
+      const plan = quickPlans[planKey];
+
+      quickTabs.forEach(function(tab){
+        const active = tab.dataset.plan === planKey;
+        tab.classList.toggle("active", active);
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+      });
+
+      document.getElementById("quickKicker").textContent = plan.kicker;
+      document.getElementById("quickTitle").textContent = plan.title;
+      document.getElementById("quickDescription").textContent = plan.description;
+      document.getElementById("quickPrice").textContent = plan.price;
+      formNote.textContent = "";
+      renderQuestionFields(plan.count);
+    }
+
+    quickTabs.forEach(function(tab){
+      tab.addEventListener("click", function(){
+        selectQuickPlan(tab.dataset.plan);
+      });
+    });
+
+    document.getElementById("questionForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      const plan = quickPlans[selectedQuickPlan];
+      const name = document.getElementById("clientName").value.trim();
+      const questions = Array.from(questionFields.querySelectorAll("textarea")).map(function(field){
+        return field.value.trim();
+      });
+
+      if(!name || questions.some(function(question){ return !question; })){
+        formNote.textContent = "Preencha seu nome e todas as perguntas antes de continuar.";
+        return;
+      }
+
+      const lines = [
+        "Oi, Rarí! Quero contratar " + plan.title + " por " + plan.price + ".",
+        "",
+        "Meu nome: " + name,
+        ""
+      ];
+
+      questions.forEach(function(question,index){
+        lines.push((index + 1) + ". " + question);
+      });
+
+      lines.push("", "Vim pela página do Tarô.");
+      const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(lines.join("\n"));
+      window.open(url,"_blank","noopener");
+      formNote.textContent = "";
+    });
+
+    const specialTabs = document.querySelectorAll(".special-tab");
+
+    specialTabs.forEach(function(tab){
+      tab.addEventListener("click", function(){
+        const key = tab.dataset.special;
+        const plan = specialPlans[key];
+
+        specialTabs.forEach(function(item){
+          const active = item.dataset.special === key;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-selected", active ? "true" : "false");
+        });
+
+        document.getElementById("specialFormat").textContent = plan.format;
+        document.getElementById("specialPrice").textContent = plan.price;
+        document.getElementById("specialDelivery").textContent = plan.delivery;
+        document.getElementById("specialKicker").textContent = plan.kicker;
+        document.getElementById("specialTitle").textContent = plan.title;
+        document.getElementById("specialDescription").textContent = plan.description;
+        document.getElementById("specialNote").textContent = plan.note;
+        document.getElementById("specialAreas").innerHTML = plan.areas.map(function(area){
+          return "<div>" + area + "</div>";
+        }).join("");
+        document.getElementById("specialWhats").href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(plan.message);
+      });
+    });
+
+    const depthTabs = document.querySelectorAll(".depth-tab");
+
+    depthTabs.forEach(function(tab){
+      tab.addEventListener("click", function(){
+        const key = tab.dataset.depth;
+        const plan = depthPlans[key];
+
+        depthTabs.forEach(function(item){
+          const active = item.dataset.depth === key;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-selected", active ? "true" : "false");
+        });
+
+        document.getElementById("depthKicker").textContent = plan.kicker;
+        document.getElementById("depthTitle").textContent = plan.title;
+        document.getElementById("depthDescription").textContent = plan.description;
+        document.getElementById("depthPrice").textContent = plan.price;
+        document.getElementById("depthFormat").textContent = plan.format;
+        document.getElementById("depthWhats").href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(plan.message);
+      });
+    });
+
+    const openSevenFields = document.getElementById("openSevenFields");
+    const sevenFieldPicker = document.getElementById("sevenFieldPicker");
+
+    openSevenFields.addEventListener("click", function(){
+      sevenFieldPicker.hidden = false;
+      openSevenFields.hidden = true;
+    });
+
+    document.querySelectorAll("[data-seven-field]").forEach(function(button){
+      button.addEventListener("click", function(){
+        const field = button.dataset.sevenField;
+        const message = [
+          "Oi, Rarí! Quero contratar a leitura Próximos 7 Dias por R$ 25.",
+          "",
+          "Quero acompanhar com mais profundidade o campo: " + field + "."
+        ].join("\n");
+        const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+        window.open(url,"_blank","noopener");
+      });
+    });
+
+    renderQuestionFields(1);
+  </script>
+</body>
+</html>
