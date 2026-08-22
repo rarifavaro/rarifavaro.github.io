@@ -232,7 +232,7 @@
     }
     .quick-tabs{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(5,1fr);
       gap:7px;
       padding:7px;
       background:var(--paper);
@@ -601,6 +601,31 @@
       line-height:1;
     }
     .depth-panel>p{margin:0;color:var(--muted);font-size:12px;line-height:1.67}
+    .consult-formats{
+      display:grid;
+      gap:8px;
+      margin:20px 0;
+      padding:0;
+      list-style:none;
+    }
+    .consult-formats li{
+      position:relative;
+      padding:11px 12px 11px 34px;
+      border-radius:12px;
+      background:var(--cream);
+      color:var(--ink);
+      font-size:10px;
+      font-weight:700;
+      line-height:1.45;
+    }
+    .consult-formats li:before{
+      content:"✓";
+      position:absolute;
+      left:13px;
+      top:11px;
+      color:var(--terra);
+      font-weight:800;
+    }
     .depth-meta{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -731,43 +756,17 @@
         <div class="hero-card">
           <div class="hero-copy">
             <span class="kicker" style="color:#f4c9b8">Consulta particular de Tarô</span>
-            <h1>Tem pergunta que pede resposta. Tem história que pede contexto.</h1>
-            <p>Você me conta o que está vivendo e eu abro o jogo para mostrar o que está por trás da situação, o movimento que ganha força e como você pode se posicionar agora.</p>
+            <h1>Você pergunta. Eu abro o jogo.</h1>
+            <p>Escolha a forma de consulta que faz mais sentido para você. Podemos olhar amor, trabalho, dinheiro, espiritualidade, decisões, caminhos ou qualquer outra área da sua vida.</p>
             <div class="hero-actions">
               <a class="primary-btn" href="#perguntas">Escolher minha consulta</a>
-              <a class="secondary-btn" href="#como-funciona">Entender como funciona</a>
+              <a class="secondary-btn" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20ajuda%20para%20escolher%20minha%20consulta%20de%20Tar%C3%B4." target="_blank" rel="noopener">Me ajuda a escolher</a>
             </div>
           </div>
           <div class="hero-visual">
             <img src="tarot-servico.jpg" alt="Cartas de Tarô">
-            <p class="visual-note">Uma leitura reservada, direta e feita para o seu momento.</p>
+            <p class="visual-note">Uma leitura reservada para compreender o que está acontecendo e enxergar seus caminhos.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reading">
-      <div class="wrap reading-grid">
-        <div class="reading-copy">
-          <span class="kicker">Como eu leio</span>
-          <h2>Eu não te entrego uma resposta solta.</h2>
-          <p>Eu separo sentimento, intenção, atitude, bloqueio e tendência para você entender o que realmente está acontecendo.</p>
-          <p>A leitura não para na carta que saiu. Eu te explico como aquele movimento aparece na sua história e o que você pode fazer com o que foi revelado.</p>
-          <div class="reading-note">Você termina a consulta entendendo o jogo, não tentando decifrar o que eu quis dizer.</div>
-        </div>
-        <div class="reading-points">
-          <article class="reading-point">
-            <span>01</span>
-            <div><strong>Clareza</strong><p>Eu organizo a situação e mostro o que está misturado, escondido ou difícil de nomear.</p></div>
-          </article>
-          <article class="reading-point">
-            <span>02</span>
-            <div><strong>Contexto</strong><p>Você entende sentimentos, movimentos, possibilidades e os pontos que estão atravessando a questão.</p></div>
-          </article>
-          <article class="reading-point">
-            <span>03</span>
-            <div><strong>Direção</strong><p>Além de enxergar o que acontece, você percebe como pode se posicionar diante disso.</p></div>
-          </article>
         </div>
       </div>
     </section>
@@ -775,9 +774,9 @@
     <section class="quick-section" id="perguntas">
       <div class="wrap">
         <div class="section-head">
-          <span class="kicker">Perguntas objetivas fora da live</span>
-          <h2>Escolha, preencha e me envie.</h2>
-          <p>Para quando você quer uma resposta direta e particular. Escolha quantas perguntas deseja fazer, escreva aqui e eu recebo tudo organizado no WhatsApp.</p>
+          <span class="kicker">Perguntas objetivas</span>
+          <h2>Para quem já sabe o que quer perguntar.</h2>
+          <p>Escolha quantas perguntas deseja fazer e me envie tudo organizado pelo WhatsApp. Você pode perguntar sobre assuntos diferentes dentro da mesma consulta.</p>
         </div>
 
         <div class="quick-shell">
@@ -785,21 +784,23 @@
             <button class="quick-tab active" type="button" role="tab" aria-selected="true" data-plan="one">1 pergunta <small>R$ 15</small></button>
             <button class="quick-tab" type="button" role="tab" aria-selected="false" data-plan="two">2 perguntas <small>R$ 25</small></button>
             <button class="quick-tab" type="button" role="tab" aria-selected="false" data-plan="three">3 perguntas <small>R$ 35</small></button>
+            <button class="quick-tab" type="button" role="tab" aria-selected="false" data-plan="four">4 perguntas <small>R$ 45</small></button>
+            <button class="quick-tab" type="button" role="tab" aria-selected="false" data-plan="five">5 perguntas <small>R$ 55</small></button>
           </div>
 
           <div class="quick-content">
             <aside class="quick-summary">
               <small id="quickKicker">Uma questão central</small>
               <h3 id="quickTitle">1 pergunta objetiva</h3>
-              <p id="quickDescription">Para olhar uma dúvida específica e receber uma resposta direta, explicada e reservada.</p>
+              <p id="quickDescription">Para quem já sabe exatamente o que quer perguntar e busca uma resposta direta.</p>
               <div class="quick-price">
                 <span>Valor</span>
                 <strong id="quickPrice">R$ 15</strong>
               </div>
               <div class="quick-benefits">
-                <div><b>✓</b><span>Resposta particular fora da live</span></div>
-                <div><b>✓</b><span>Leitura enviada por áudio</span></div>
-                <div><b>✓</b><span>Orientação direta para cada pergunta</span></div>
+                <div><b>✓</b><span>Perguntas sobre assuntos diferentes</span></div>
+                <div><b>✓</b><span>Fotos das cartas + leitura em áudio</span></div>
+                <div><b>✓</b><span>Entrega em até 6 horas após a contratação</span></div>
               </div>
             </aside>
 
@@ -813,6 +814,14 @@
                 <label for="clientName">Seu nome completo</label>
                 <input id="clientName" name="clientName" autocomplete="name" placeholder="Como você quer ser chamado">
               </div>
+              <div class="field">
+                <label for="clientBirth">Sua data de nascimento</label>
+                <input id="clientBirth" name="clientBirth" type="date" autocomplete="bday">
+              </div>
+              <div class="field">
+                <label for="involvedPeople">Pessoas envolvidas (opcional)</label>
+                <textarea id="involvedPeople" name="involvedPeople" placeholder="Se houver, coloque o nome completo e a data de nascimento. Se não souber a data, não tem problema."></textarea>
+              </div>
               <div id="questionFields"></div>
               <button class="primary-btn" type="submit" id="sendQuestions">Enviar minha pergunta no WhatsApp</button>
               <p class="form-note" id="formNote" aria-live="polite"></p>
@@ -823,133 +832,87 @@
       </div>
     </section>
 
-    <section class="special-readings" id="leituras">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="kicker">Leituras especiais</span>
-          <h2>Escolha o mapa que conversa com o seu momento.</h2>
-          <p>Tem leitura para organizar o mês, cuidar da vida profissional ou abrir um ciclo inteiro pelas 12 casas astrológicas.</p>
-        </div>
-
-        <div class="special-box">
-          <div class="special-tabs" role="tablist" aria-label="Leituras especiais">
-            <button class="special-tab active" type="button" role="tab" aria-selected="true" data-special="monthly">Leitura Mensal</button>
-            <button class="special-tab" type="button" role="tab" aria-selected="false" data-special="professional">Profissional</button>
-            <button class="special-tab" type="button" role="tab" aria-selected="false" data-special="mandala">Mandala Astrológica</button>
-          </div>
-
-          <div class="special-content" role="tabpanel">
-            <aside class="special-value">
-              <small id="specialFormat">Leitura do seu próximo mês</small>
-              <strong id="specialPrice">R$ 97</strong>
-              <p id="specialDelivery">Leitura completa enviada por áudio</p>
-              <a class="primary-btn" id="specialWhats" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20contratar%20a%20Leitura%20Mensal%20por%20R%24%2097.">Quero escolher essa leitura</a>
-            </aside>
-            <div class="special-detail">
-              <span class="kicker" id="specialKicker">Seu mês por inteiro</span>
-              <h3 id="specialTitle">Leitura Mensal</h3>
-              <p id="specialDescription">Eu abro as principais áreas do seu próximo mês para mostrar onde existe movimento, o que pede atenção e como você pode atravessar esse período com mais consciência.</p>
-              <div class="area-list" id="specialAreas">
-                <div>Energia central do mês</div>
-                <div>Amor e relacionamentos</div>
-                <div>Trabalho e vida profissional</div>
-                <div>Dinheiro e oportunidades</div>
-                <div>Vida pessoal e emocional</div>
-                <div>Espiritualidade e intuição</div>
-                <div>Desafio do período</div>
-                <div>Conselho e direção</div>
-              </div>
-              <p class="special-note" id="specialNote">A leitura acompanha o ciclo que começa agora e ajuda você a reconhecer os movimentos mais importantes do período.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="fast-head">
-          <span class="kicker">Leituras rápidas</span>
-          <h3>Um jogo pequeno para uma questão que está pedindo clareza agora.</h3>
-          <p>Você escolhe o tema e eu faço uma abertura direta, com começo, meio e direção. A resposta é particular e enviada por áudio.</p>
-        </div>
-
-        <div class="fast-grid">
-          <article class="fast-card">
-            <small>Uma carta para cada dia</small>
-            <h4>Próximos 7 dias</h4>
-            <p>Eu abro os sete dias, encontro o dia de maior abertura, o ponto de atenção, o conselho central e aprofundo o campo que você escolher.</p>
-            <strong>R$ 25</strong>
-            <button class="primary-btn" type="button" id="openSevenFields">Escolher meu campo</button>
-            <div class="field-picker" id="sevenFieldPicker" hidden>
-              <span>Qual campo você quer acompanhar?</span>
-              <button class="field-choice" type="button" data-seven-field="Geral">Geral</button>
-              <button class="field-choice" type="button" data-seven-field="Amor e relacionamentos">Amor e relacionamentos</button>
-              <button class="field-choice" type="button" data-seven-field="Profissional e financeiro">Profissional e financeiro</button>
-              <button class="field-choice" type="button" data-seven-field="Emocional e energético">Emocional e energético</button>
-            </div>
-          </article>
-          <article class="fast-card">
-            <small>Relacionamentos</small>
-            <h4>Amor agora</h4>
-            <p>Sua energia, a energia da outra pessoa, o vínculo e o próximo movimento da relação.</p>
-            <strong>R$ 35</strong>
-            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20a%20leitura%20Amor%20Agora%20por%20R%24%2035.">Quero essa leitura</a>
-          </article>
-          <article class="fast-card">
-            <small>Decisão</small>
-            <h4>Entre dois caminhos</h4>
-            <p>O que cada escolha movimenta, seus pontos de atenção e qual direção ganha mais força.</p>
-            <strong>R$ 35</strong>
-            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20a%20leitura%20Entre%20Dois%20Caminhos%20por%20R%24%2035.">Quero essa leitura</a>
-          </article>
-          <article class="fast-card">
-            <small>Vida material</small>
-            <h4>Trabalho e dinheiro</h4>
-            <p>Seu momento, o que trava, a oportunidade disponível e a direção prática para avançar.</p>
-            <strong>R$ 35</strong>
-            <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20a%20leitura%20Trabalho%20e%20Dinheiro%20por%20R%24%2035.">Quero essa leitura</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="depth" id="aprofundar">
+    <section class="depth" id="consultas">
       <div class="wrap depth-grid">
         <div class="depth-copy">
-          <span class="kicker" style="color:#f4c9b8">Quando a pergunta é só a ponta</span>
-          <h2>Algumas histórias precisam de mais espaço.</h2>
-          <p>Se a sua questão tem várias camadas, não cabe numa resposta objetiva. Na consulta por ligação de áudio, a gente abre o contexto, acompanha os desdobramentos e entende o que o jogo revela enquanto a conversa acontece.</p>
-          <div class="depth-note">Você não precisa chegar sabendo qual consulta escolher. Me conta o que está vivendo e eu te ajudo.</div>
+          <span class="kicker" style="color:#f4c9b8">Consultas por tempo</span>
+          <h2>Abra espaço para tudo o que precisa ser olhado.</h2>
+          <p>Durante o tempo contratado, você pode trazer questões sobre amor, trabalho, dinheiro, espiritualidade, família, relações, decisões, ciclos e caminhos.</p>
+          <div class="depth-note">Se você não souber por onde começar, tudo bem. Eu te ajudo a organizar suas perguntas e conduzo a leitura a partir do que estiver mais importante.</div>
         </div>
 
         <div class="depth-box">
-          <div class="depth-tabs" role="tablist" aria-label="Consultas aprofundadas">
-            <button class="depth-tab active" type="button" role="tab" aria-selected="true" data-depth="directed">30 minutos</button>
-            <button class="depth-tab" type="button" role="tab" aria-selected="false" data-depth="deep">60 minutos</button>
+          <div class="depth-tabs" role="tablist" aria-label="Consultas por tempo">
+            <button class="depth-tab active" type="button" role="tab" aria-selected="true" data-depth="thirty">30 minutos</button>
+            <button class="depth-tab" type="button" role="tab" aria-selected="false" data-depth="hour">1 hora</button>
           </div>
           <div class="depth-panel" role="tabpanel">
-            <small id="depthKicker">Uma área ou situação central</small>
-            <h3 id="depthTitle">Consulta direcionada</h3>
-            <p id="depthDescription">Para aprofundar uma situação, entender o que está por trás dela e acompanhar as perguntas que nascem dentro do mesmo tema.</p>
+            <small id="depthKicker">Pergunte livremente dentro do tempo</small>
+            <h3 id="depthTitle">Consulta de 30 minutos</h3>
+            <p id="depthDescription">Aqui você não precisa ficar preso a uma única pergunta. Podemos abrir o jogo para diferentes assuntos e explorar quantas questões forem possíveis dentro dos 30 minutos.</p>
             <div class="depth-meta">
-              <div><span>Investimento</span><strong id="depthPrice">R$ 97</strong></div>
-              <div><span>Formato</span><p id="depthFormat">30 minutos por ligação de áudio</p></div>
+              <div><span>Investimento</span><strong id="depthPrice">R$ 87</strong></div>
+              <div><span>Duração</span><p id="depthFormat">30 minutos com horário agendado</p></div>
             </div>
-            <a class="primary-btn" id="depthWhats" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20agendar%20a%20Consulta%20Direcionada%20de%2030%20minutos%20por%20R%24%2097.">Quero escolher essa consulta</a>
+            <ul class="consult-formats">
+              <li>WhatsApp, com fotos das cartas + minha leitura em áudio</li>
+              <li>Chamada de áudio</li>
+              <li>Chamada de vídeo</li>
+            </ul>
+            <a class="primary-btn" id="depthWhats" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20agendar%20a%20Consulta%20de%2030%20minutos%20por%20R%24%2087.">Quero agendar essa consulta</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="steps-section" id="como-funciona">
+    <section class="special-readings" id="leitura-mensal">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Leitura Mensal</span>
+          <h2>Um panorama completo do seu próximo ciclo.</h2>
+          <p>Eu abro o Tarô para oito áreas da sua vida e mostro as principais movimentações do período.</p>
+        </div>
+
+        <div class="special-box">
+          <div class="special-content">
+            <aside class="special-value">
+              <small>Seu próximo ciclo</small>
+              <strong>R$ 97</strong>
+              <p>Entrega com horário previamente combinado comigo</p>
+              <a class="primary-btn" target="_blank" rel="noopener" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Quero%20contratar%20a%20Leitura%20Mensal%20por%20R%24%2097.">Quero minha Leitura Mensal</a>
+            </aside>
+            <div class="special-detail">
+              <span class="kicker">8 áreas da sua vida</span>
+              <h3>Leitura Mensal</h3>
+              <p>Uma leitura ampla para compreender as principais movimentações do mês, reconhecer oportunidades e cuidar dos pontos que pedem mais atenção.</p>
+              <div class="area-list">
+                <div><strong>01. Amor e relacionamentos</strong><br>Movimentos afetivos, vínculos e vida amorosa.</div>
+                <div><strong>02. Trabalho e carreira</strong><br>Caminhos profissionais, projetos e movimentações nessa área.</div>
+                <div><strong>03. Financeiro</strong><br>Dinheiro, organização financeira, oportunidades e pontos de atenção.</div>
+                <div><strong>04. Espiritualidade</strong><br>Seu campo espiritual, percepção, conexão e desenvolvimento interior.</div>
+                <div><strong>05. Família e relações próximas</strong><br>Dinâmicas familiares e vínculos importantes ao seu redor.</div>
+                <div><strong>06. Vida pessoal e emocional</strong><br>Seu momento interno, desejos, necessidades e processos pessoais.</div>
+                <div><strong>07. Oportunidades e desafios</strong><br>O que tende a ganhar força e aquilo que pede mais atenção durante o período.</div>
+                <div><strong>08. Conselho do mês</strong><br>A energia central do ciclo e a orientação final do Tarô.</div>
+              </div>
+              <p class="special-note">A Leitura Mensal é entregue com horário previamente combinado comigo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section" id="como-escolher">
       <div class="wrap steps-grid">
         <div class="steps-copy">
-          <span class="kicker">Como funciona</span>
-          <h2>Simples, particular e sem enrolação.</h2>
-          <p>Você escolhe a profundidade que faz sentido, me envia sua questão e eu organizo o atendimento com você pelo WhatsApp.</p>
+          <span class="kicker">Não sabe qual escolher?</span>
+          <h2>Eu te ajudo a encontrar a consulta certa.</h2>
+          <p>Observe se você já tem uma pergunta definida, se precisa conversar sobre vários assuntos ou se quer compreender o seu próximo ciclo de forma ampla.</p>
         </div>
         <div class="steps">
-          <article class="step"><span>Passo 1</span><h3>Você escolhe sua consulta</h3><p>Pergunta objetiva, consulta de 30 minutos ou consulta de 60 minutos.</p></article>
-          <article class="step"><span>Passo 2</span><h3>Me conta o que está vivendo</h3><p>Nas perguntas objetivas, você já preenche tudo na página. Nas consultas, a gente organiza o foco pelo WhatsApp.</p></article>
-          <article class="step"><span>Passo 3</span><h3>A gente confirma o atendimento</h3><p>Eu envio a forma de pagamento e, quando for uma consulta ao vivo, combinamos o melhor horário.</p></article>
-          <article class="step"><span>Passo 4</span><h3>Eu abro o jogo com você</h3><p>Você recebe uma leitura explicada, com contexto, direção e espaço para compreender o que apareceu.</p></article>
+          <article class="step"><span>Uma questão específica</span><h3>Perguntas objetivas</h3><p>Para quando você já sabe exatamente o que quer perguntar e busca uma resposta direta.</p></article>
+          <article class="step"><span>Vários assuntos ao mesmo tempo</span><h3>Consulta de 30 minutos ou 1 hora</h3><p>Para conversar, perguntar livremente e aprofundar conforme o jogo vai se abrindo.</p></article>
+          <article class="step"><span>Um panorama amplo</span><h3>Leitura Mensal</h3><p>Para olhar o seu próximo ciclo e compreender os movimentos das oito áreas da sua vida.</p></article>
         </div>
       </div>
     </section>
@@ -958,9 +921,9 @@
       <div class="wrap">
         <div class="final-card">
           <div>
-            <span class="kicker" style="color:#fff">Ainda está em dúvida?</span>
-            <h2>Me conta o que está acontecendo.</h2>
-            <p>Eu te ajudo a escolher entre a pergunta objetiva e uma consulta mais profunda.</p>
+            <span class="kicker" style="color:#fff">Pode falar comigo</span>
+            <h2>Ainda não sabe por onde começar?</h2>
+            <p>Me conta o que está vivendo. Eu te ajudo a organizar suas perguntas e escolher a melhor forma de consulta.</p>
           </div>
           <a class="primary-btn" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Estou%20na%20p%C3%A1gina%20do%20Tar%C3%B4%20e%20quero%20ajuda%20para%20escolher%20minha%20consulta." target="_blank" rel="noopener">Falar diretamente comigo</a>
         </div>
@@ -980,108 +943,55 @@
         count: 1,
         kicker: "Uma questão central",
         title: "1 pergunta objetiva",
-        description: "Para olhar uma dúvida específica e receber uma resposta direta, explicada e reservada.",
+        description: "Para quem já sabe exatamente o que quer perguntar e busca uma resposta direta.",
         price: "R$ 15"
       },
       two: {
         count: 2,
         kicker: "Duas questões para organizar",
         title: "2 perguntas objetivas",
-        description: "Para olhar duas dúvidas ou dois pontos da mesma situação sem precisar entrar ao vivo.",
+        description: "Duas perguntas sobre o mesmo assunto ou sobre áreas diferentes da sua vida.",
         price: "R$ 25"
       },
       three: {
         count: 3,
         kicker: "Mais contexto para o seu momento",
         title: "3 perguntas objetivas",
-        description: "Para abrir três questões e compreender melhor os movimentos que estão atravessando o seu momento.",
+        description: "Três perguntas diretas para compreender os movimentos que atravessam o seu momento.",
         price: "R$ 35"
+      },
+      four: {
+        count: 4,
+        kicker: "Quatro pontos para compreender",
+        title: "4 perguntas objetivas",
+        description: "Quatro perguntas que podem percorrer assuntos diferentes dentro da mesma consulta.",
+        price: "R$ 45"
+      },
+      five: {
+        count: 5,
+        kicker: "Uma abertura mais ampla",
+        title: "5 perguntas objetivas",
+        description: "Cinco perguntas para olhar diferentes assuntos e organizar o que precisa de clareza agora.",
+        price: "R$ 55"
       }
     };
 
     const depthPlans = {
-      directed: {
-        kicker: "Uma área ou situação central",
-        title: "Consulta direcionada",
-        description: "Para aprofundar uma situação, entender o que está por trás dela e acompanhar as perguntas que nascem dentro do mesmo tema.",
-        price: "R$ 97",
-        format: "30 minutos por ligação de áudio",
-        message: "Oi, Rarí! Quero agendar a Consulta Direcionada de 30 minutos por R$ 97."
+      thirty: {
+        kicker: "Pergunte livremente dentro do tempo",
+        title: "Consulta de 30 minutos",
+        description: "Aqui você não precisa ficar preso a uma única pergunta. Podemos abrir o jogo para diferentes assuntos e explorar quantas questões forem possíveis dentro dos 30 minutos.",
+        price: "R$ 87",
+        format: "30 minutos com horário agendado",
+        message: "Oi, Rarí! Quero agendar a Consulta de 30 minutos por R$ 87."
       },
-      deep: {
-        kicker: "Mais tempo para abrir todas as camadas",
-        title: "Consulta profunda",
-        description: "Para relações, ciclos repetidos, decisões importantes ou histórias com várias perguntas ligadas umas às outras.",
-        price: "R$ 147",
-        format: "60 minutos por ligação de áudio",
-        message: "Oi, Rarí! Quero agendar a Consulta Profunda de 60 minutos por R$ 147."
-      }
-    };
-
-    const specialPlans = {
-      monthly: {
-        format: "Leitura do seu próximo mês",
-        price: "R$ 97",
-        delivery: "Leitura completa enviada por áudio",
-        kicker: "Seu mês por inteiro",
-        title: "Leitura Mensal",
-        description: "Eu abro as principais áreas do seu próximo mês para mostrar onde existe movimento, o que pede atenção e como você pode atravessar esse período com mais consciência.",
-        areas: [
-          "Energia central do mês",
-          "Amor e relacionamentos",
-          "Trabalho e vida profissional",
-          "Dinheiro e oportunidades",
-          "Vida pessoal e emocional",
-          "Espiritualidade e intuição",
-          "Desafio do período",
-          "Conselho e direção"
-        ],
-        note: "A leitura acompanha o ciclo que começa agora e ajuda você a reconhecer os movimentos mais importantes do período.",
-        message: "Oi, Rarí! Quero contratar a Leitura Mensal por R$ 97."
-      },
-      professional: {
-        format: "Leitura direcionada para a carreira",
-        price: "R$ 97",
-        delivery: "Leitura completa enviada por áudio",
-        kicker: "Trabalho, dinheiro e posicionamento",
-        title: "Leitura Profissional",
-        description: "Uma abertura para entender seu momento profissional, reconhecer o que está travando seu crescimento e enxergar onde existe força, oportunidade e movimento.",
-        areas: [
-          "Seu momento profissional",
-          "Talentos e forças disponíveis",
-          "Bloqueios e pontos de atenção",
-          "Ambiente e relações de trabalho",
-          "Dinheiro e reconhecimento",
-          "Oportunidades próximas",
-          "Posicionamento necessário",
-          "Próximo passo prático"
-        ],
-        note: "Faz sentido para decisões de carreira, mudança de trabalho, projetos, vendas, crescimento e reposicionamento profissional.",
-        message: "Oi, Rarí! Quero contratar a Leitura Profissional por R$ 97."
-      },
-      mandala: {
-        format: "Um ano específico ou os próximos 12 meses",
-        price: "R$ 297",
-        delivery: "12 casas astrológicas + linha dos 12 meses",
-        kicker: "Uma visão completa do seu ciclo",
-        title: "Mandala Astrológica",
-        description: "Eu abro o Tarô pela estrutura simbólica das 12 casas astrológicas. Primeiro enxergamos cada área da sua vida. Depois eu abro a linha dos 12 meses para acompanhar como esse ciclo se movimenta no tempo.",
-        areas: [
-          "Casa 1: identidade e começos",
-          "Casa 2: dinheiro e recursos",
-          "Casa 3: comunicação e estudos",
-          "Casa 4: casa e família",
-          "Casa 5: amor e criatividade",
-          "Casa 6: rotina e bem-estar",
-          "Casa 7: relações e parcerias",
-          "Casa 8: transformações e trocas",
-          "Casa 9: expansão e espiritualidade",
-          "Casa 10: carreira e imagem",
-          "Casa 11: projetos e amizades",
-          "Casa 12: inconsciente e encerramentos"
-        ],
-        note: "Você escolhe se a Mandala será feita para um ano específico ou para os próximos 12 meses contados a partir da leitura.",
-        message: "Oi, Rarí! Quero contratar a Mandala Astrológica por R$ 297."
+      hour: {
+        kicker: "Mais tempo para aprofundar e conectar",
+        title: "Consulta de 1 hora",
+        description: "Durante 1 hora podemos percorrer diferentes assuntos e áreas da sua vida, aprofundar situações, conectar acontecimentos e fazer novas perguntas conforme a leitura se desenvolve.",
+        price: "R$ 137",
+        format: "1 hora com horário agendado",
+        message: "Oi, Rarí! Quero agendar a Consulta de 1 hora por R$ 137."
       }
     };
 
@@ -1149,21 +1059,34 @@
       event.preventDefault();
       const plan = quickPlans[selectedQuickPlan];
       const name = document.getElementById("clientName").value.trim();
+      const birth = document.getElementById("clientBirth").value;
+      const involvedPeople = document.getElementById("involvedPeople").value.trim();
       const questions = Array.from(questionFields.querySelectorAll("textarea")).map(function(field){
         return field.value.trim();
       });
 
-      if(!name || questions.some(function(question){ return !question; })){
-        formNote.textContent = "Preencha seu nome e todas as perguntas antes de continuar.";
+      if(!name || !birth || questions.some(function(question){ return !question; })){
+        formNote.textContent = "Preencha seu nome, sua data de nascimento e todas as perguntas antes de continuar.";
         return;
       }
+
+      const birthParts = birth.split("-");
+      const formattedBirth = birthParts.length === 3
+        ? birthParts[2] + "/" + birthParts[1] + "/" + birthParts[0]
+        : birth;
 
       const lines = [
         "Oi, Rarí! Quero contratar " + plan.title + " por " + plan.price + ".",
         "",
         "Meu nome: " + name,
-        ""
+        "Minha data de nascimento: " + formattedBirth
       ];
+
+      if(involvedPeople){
+        lines.push("Pessoa(s) envolvida(s): " + involvedPeople);
+      }
+
+      lines.push("");
 
       questions.forEach(function(question,index){
         lines.push((index + 1) + ". " + question);
@@ -1173,33 +1096,6 @@
       const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(lines.join("\n"));
       window.open(url,"_blank","noopener");
       formNote.textContent = "";
-    });
-
-    const specialTabs = document.querySelectorAll(".special-tab");
-
-    specialTabs.forEach(function(tab){
-      tab.addEventListener("click", function(){
-        const key = tab.dataset.special;
-        const plan = specialPlans[key];
-
-        specialTabs.forEach(function(item){
-          const active = item.dataset.special === key;
-          item.classList.toggle("active", active);
-          item.setAttribute("aria-selected", active ? "true" : "false");
-        });
-
-        document.getElementById("specialFormat").textContent = plan.format;
-        document.getElementById("specialPrice").textContent = plan.price;
-        document.getElementById("specialDelivery").textContent = plan.delivery;
-        document.getElementById("specialKicker").textContent = plan.kicker;
-        document.getElementById("specialTitle").textContent = plan.title;
-        document.getElementById("specialDescription").textContent = plan.description;
-        document.getElementById("specialNote").textContent = plan.note;
-        document.getElementById("specialAreas").innerHTML = plan.areas.map(function(area){
-          return "<div>" + area + "</div>";
-        }).join("");
-        document.getElementById("specialWhats").href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(plan.message);
-      });
     });
 
     const depthTabs = document.querySelectorAll(".depth-tab");
@@ -1221,27 +1117,6 @@
         document.getElementById("depthPrice").textContent = plan.price;
         document.getElementById("depthFormat").textContent = plan.format;
         document.getElementById("depthWhats").href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(plan.message);
-      });
-    });
-
-    const openSevenFields = document.getElementById("openSevenFields");
-    const sevenFieldPicker = document.getElementById("sevenFieldPicker");
-
-    openSevenFields.addEventListener("click", function(){
-      sevenFieldPicker.hidden = false;
-      openSevenFields.hidden = true;
-    });
-
-    document.querySelectorAll("[data-seven-field]").forEach(function(button){
-      button.addEventListener("click", function(){
-        const field = button.dataset.sevenField;
-        const message = [
-          "Oi, Rarí! Quero contratar a leitura Próximos 7 Dias por R$ 25.",
-          "",
-          "Quero acompanhar com mais profundidade o campo: " + field + "."
-        ].join("\n");
-        const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
-        window.open(url,"_blank","noopener");
       });
     });
 
