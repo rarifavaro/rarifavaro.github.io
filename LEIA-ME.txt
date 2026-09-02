@@ -1,19 +1,19 @@
-RARÍ FÁVARO — SITE V2
+RARÍ FÁVARO — CATÁLOGO PROFISSIONAL
 
 Arquivos deste pacote:
-- index.html → nova home
-- style.css → novo visual responsivo/mobile
-- metodo.html → página do Método Rarí
-- script.js → mantém PIX e botões da live
+- index.html → home profissional e catálogo de atendimentos
+- style.css → identidade visual responsiva para computador e celular
+- tarot.html, numerologia.html, mesa.html, reiki.html e metodo.html → páginas dos atendimentos
+- capas e PDFs → materiais gratuitos da biblioteca
 
 IMPORTANTE
 1. NÃO apague sua foto atual rari-hero.jpg do repositório.
    A nova home usa exatamente esse arquivo para preservar sua foto real.
-2. Também mantenha tarot.html e numerologia.html, porque os novos cards apontam para essas páginas.
+2. Mantenha todas as páginas de atendimento, porque os cards do catálogo apontam para elas.
 3. Antes de substituir, salve uma cópia dos arquivos atuais.
-4. Ainda NÃO coloquei CNAME. Primeiro configure o DNS do domínio rarifavaro.com.br e depois conecte o domínio no GitHub Pages.
-5. Os botões dos livros/e-books vão para o WhatsApp por enquanto, porque os links individuais de compra não foram fornecidos.
-6. O botão Sementes já usa o convite:
+4. O arquivo CNAME preserva o domínio rarifavaro.com.br.
+5. Os botões dos livros abrem e baixam os PDFs que já estão no pacote.
+6. O botão Sementes usa o convite:
    https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&p=i&mlu=4&amv=1
 
-LIVE: 21h
+A antiga área de perguntas e pagamento da live foi removida da página inicial.

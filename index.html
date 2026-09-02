@@ -3,332 +3,372 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#143f37">
-  <meta name="description" content="Rarí Fávaro — Tarot, Mapa Cabalístico e Método Rarí.">
-  <title>Rarí Fávaro | Escolha a jornada</title>
+  <meta name="theme-color" content="#0d302b">
+  <meta name="description" content="Rarí Fávaro — Tarot, Numerologia Cabalística, Radiestesia, Reiki e processos terapêuticos para clareza, cuidado energético e transformação.">
+  <title>Rarí Fávaro | Tarot, Numerologia e Terapias Energéticas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=ebooks-2">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=catalogo-1">
 </head>
 <body>
 
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
 <header class="top">
-  <a class="brand" href="#inicio">
-    <span class="brand-photo"><img src="rari-hero.jpg" alt="Rarí Fávaro"></span>
-    <strong>Rarí Fávaro</strong>
+  <a class="brand" href="#inicio" aria-label="Rarí Fávaro — página inicial">
+    <span class="brand-mark">RF</span>
+    <span class="brand-name">
+      <strong>Rarí Fávaro</strong>
+      <small>Tarot &amp; Terapias Integrativas</small>
+    </span>
   </a>
-  <a class="top-whats" target="_blank" href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20pelo%20site.">WhatsApp</a>
+
+  <nav class="desktop-nav" aria-label="Navegação principal">
+    <a href="#atendimentos">Atendimentos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#sementes">Sementes</a>
+    <a href="#materiais">Conteúdos</a>
+  </nav>
+
+  <a class="top-cta" target="_blank" rel="noopener"
+     href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Conheci%20seu%20trabalho%20pelo%20site%20e%20quero%20entender%20qual%20atendimento%20%C3%A9%20mais%20indicado%20para%20mim.">
+    Agendar atendimento
+  </a>
 </header>
 
-<main id="inicio">
+<main id="conteudo">
 
-<section class="hero wrap">
-  <div class="hero-copy">
-    <span class="kicker">Tá comigo na live?</span>
-    <h1>Olá, eu sou o Rarí.<br>Estou aqui pra te auxiliar nesse caminho de autoconhecimento.</h1>
-    <p>Você está na live comigo ? se sim vou te explicar como Perguntar.</p>
-    <a class="btn primary" href="#live">Quero fazer minha pergunta</a>
-  </div>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Consciência · simbolismo · transformação</p>
+        <h1>Clareza para compreender seus ciclos. Cuidado para transformar o que se repete.</h1>
+        <p class="hero-intro">
+          Eu uno Tarot, Numerologia Cabalística e práticas energéticas para ajudar você a enxergar
+          seu momento com profundidade e conduzir mudanças reais, sem perder os pés do chão.
+        </p>
 
-  <div class="hero-photo">
-    <img src="rari-hero.jpg" alt="Rarí Fávaro">
-    <div class="live-chip">
-      <b>● AO VIVO</b>
-      <span>Todos os dias • 21h</span>
-    </div>
-  </div>
-</section>
+        <div class="hero-actions">
+          <a class="button button-light" href="#atendimentos">Conhecer atendimentos</a>
+          <a class="text-link" target="_blank" rel="noopener"
+             href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20um%20atendimento.">
+            Falar comigo <span aria-hidden="true">↗</span>
+          </a>
+        </div>
 
-<section class="live" id="live">
-  <div class="wrap">
-
-    <div class="live-head">
-      <div>
-        <span class="kicker pale">Tá vindo da live?</span>
-        <h2>Viva essa experiência ao vivo</h2>
-      </div>
-      <p>Patrocine e aguarde sua vez.</p>
-    </div>
-
-    <div class="prices">
-      <button class="price" data-value="10" data-label="1 pergunta">
-        <span>1 pergunta</span>
-        <strong><small>R$</small>10</strong>
-      </button>
-
-      <button class="price featured" data-value="15" data-label="2 perguntas">
-        <i>mais escolhido</i>
-        <span>2 perguntas</span>
-        <strong><small>R$</small>15</strong>
-      </button>
-
-      <button class="price" data-value="22" data-label="3 perguntas">
-        <span>3 perguntas</span>
-        <strong><small>R$</small>22</strong>
-      </button>
-    </div>
-
-    <div class="payment-panel">
-      <div class="selection" id="selectedText">Escolhe uma opção acima</div>
-
-      <button class="pix-btn" id="copyPix">
-        <span>PIX</span>
-        <strong>(21) 97500-3419</strong>
-        <small>Toque para copiar</small>
-      </button>
-    </div>
-
-    <div class="live-instructions">
-      <div class="step">
-        <b>1</b>
-        <p>Escolha sua opção.</p>
-      </div>
-
-      <div class="step">
-        <b>2</b>
-        <p>Faça o PIX.</p>
-      </div>
-
-      <div class="step">
-        <b>3</b>
-        <p>Na live, me manda seu <strong>nome completo + sua pergunta</strong>.</p>
-      </div>
-    </div>
-
-    <p class="queue-note">
-      Eu confiro o pagamento pela barra de notificações e te respondo na ordem da fila.
-    </p>
-
-    <p class="free-note">
-      As perguntas gratuitas eu escolho ao vivo. Quem estiver participando, curtindo, compartilhando enviando presentes.
-    </p>
-
-  </div>
-</section>
-
-<section class="services wrap" id="servicos">
-
-  <div class="section-title">
-    <span class="kicker">Meus atendimentos</span>
-    <h2>Aqui você escolhe sua consulta comigo.</h2>
-    <p>Entenda a melhor opção para o seu momento.</p>
-  </div>
-
-  <div class="service-grid">
-
-    <a class="service-card" href="tarot.html">
-      <img src="tarot-servico.jpg" alt="Tarot">
-      <div class="service-copy">
-        <small>Consulta particular</small>
-        <h3>Tarot</h3>
-        <p>Quando você deve olhar a situação com mais calma e profundidade.</p>
-        <b>Clica aqui para conhecer →</b>
-      </div>
-    </a>
-
-    <a class="service-card sand" href="numerologia.html">
-      <img src="numerologia-servico.jpg" alt="Mapa Cabalístico">
-      <div class="service-copy">
-        <small>Numerologia Cabalística</small>
-        <h3>Mapa Cabalístico</h3>
-        <p>Aqui enrendemos seus Padrões, seus ciclos a energia do seu nome e muito mais.</p>
-        <b>Quero conhecer meu mapa →</b>
-      </div>
-    </a>
-
-    <a class="service-card terra" href="metodo.html">
-      <img src="mesa-servico.jpg" alt="Método Rarí">
-      <div class="service-copy">
-        <small>Metodologia autoral</small>
-        <h3>Solo Sagrado</h3>
-        <p>Criei essa jornada a partir das observações que tive com as cartas e com o
-          mapas, tendo a necessidade de trabalhar energias, padrões e transmutações.</p>
-        <b>Quero entender melhor →</b>
-      </div>
-    </a>
-
-  </div>
-</section>
-
-<section class="community" id="sementes">
-  <div class="wrap community-grid">
-
-    <div class="community-preview">
-      <div class="wa-top">
-        <img src="rari-hero.jpg" alt="Rarí Fávaro">
-        <div>
-          <strong>Sementes 🌱</strong>
-          <span>Comunidade no WhatsApp</span>
+        <div class="hero-proof" aria-label="Informações sobre os atendimentos">
+          <div><strong>+2 mil</strong><span>atendimentos e processos conduzidos</span></div>
+          <div><strong>Online</strong><span>para o Brasil e exterior</span></div>
         </div>
       </div>
 
-      <div class="wa-chat">
-        <div class="bubble left">Live hoje às 21h 🌿</div>
-        <div class="bubble right">Prática coletiva essa semana</div>
-        <div class="bubble left">Conteúdo novo no grupo ✨</div>
+      <div class="hero-visual" aria-label="Retrato de Rarí Fávaro">
+        <div class="portrait-frame">
+          <img src="rari-hero.jpg" alt="Rarí Fávaro, tarólogo, numerólogo e terapeuta holístico">
+        </div>
+        <div class="portrait-note">
+          <span>Atendimento individual</span>
+          <strong>Presença, escuta e direção</strong>
+        </div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
       </div>
     </div>
+  </section>
 
-    <div class="community-copy">
-      <span class="kicker pale">Sementes</span>
-      <h2>Venha se juntar a essa egrégora.</h2>
-      <p>Em nossa comunidade, compartilho informações, jornadas gratuitas, novidades, envio de reiki gratuito, promoções e muito mais.</p>
+  <section class="signature" aria-label="Áreas de atuação">
+    <div class="wrap signature-list">
+      <span>Tarot</span><i>✦</i>
+      <span>Numerologia Cabalística</span><i>✦</i>
+      <span>Radiestesia</span><i>✦</i>
+      <span>Reiki</span><i>✦</i>
+      <span>Expansão da consciência</span>
+    </div>
+  </section>
 
-      <ul>
-        <li>Avisos das lives</li>
-        <li>Conteúdos e práticas</li>
-        <li>Encontros coletivos</li>
-        <li>Trocas com a comunidade</li>
-      </ul>
+  <section class="catalog wrap" id="atendimentos">
+    <div class="section-heading split-heading">
+      <div>
+        <p class="eyebrow dark">Catálogo de atendimentos</p>
+        <h2>Um cuidado diferente para cada momento do caminho.</h2>
+      </div>
+      <p>
+        Algumas fases pedem uma resposta objetiva. Outras pedem investigação, reorganização energética
+        e acompanhamento. Conheça cada possibilidade e escolha com consciência.
+      </p>
+    </div>
 
-      <a class="btn seed-btn" target="_blank"
-         href="https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&p=i&mlu=4&amv=1">
-         Entrar na comunidade
+    <div class="catalog-grid">
+      <a class="catalog-card card-featured" href="tarot.html">
+        <div class="card-image">
+          <img src="tarot-servico.jpg" alt="Cartas de Tarot sobre uma mesa">
+          <span>01</span>
+        </div>
+        <div class="card-content">
+          <p class="card-type">Leitura e orientação</p>
+          <h3>Tarot</h3>
+          <p>Para trazer clareza às suas questões, compreender movimentos e tomar decisões com mais consciência.</p>
+          <b>Conhecer a leitura <span aria-hidden="true">↗</span></b>
+        </div>
+      </a>
+
+      <a class="catalog-card" href="numerologia.html">
+        <div class="card-image">
+          <img src="numerologia-servico.jpg" alt="Símbolos de numerologia cabalística">
+          <span>02</span>
+        </div>
+        <div class="card-content">
+          <p class="card-type">Mapa de autoconhecimento</p>
+          <h3>Numerologia Cabalística</h3>
+          <p>Uma leitura profunda do seu nome e nascimento para reconhecer potenciais, padrões, ciclos e direção de vida.</p>
+          <b>Conhecer o mapa <span aria-hidden="true">↗</span></b>
+        </div>
+      </a>
+
+      <a class="catalog-card" href="mesa.html">
+        <div class="card-image">
+          <img src="mesa-servico.jpg" alt="Mesa com gráficos de radiestesia">
+          <span>03</span>
+        </div>
+        <div class="card-content">
+          <p class="card-type">Investigação e harmonização</p>
+          <h3>Tratamento Radiestésico</h3>
+          <p>Investigação do campo para identificar áreas que pedem atenção e construir um tratamento energético direcionado.</p>
+          <b>Conhecer o tratamento <span aria-hidden="true">↗</span></b>
+        </div>
+      </a>
+
+      <a class="catalog-card" href="reiki.html">
+        <div class="card-image">
+          <img src="reiki-servico.jpg" alt="Atendimento energético com Reiki">
+          <span>04</span>
+        </div>
+        <div class="card-content">
+          <p class="card-type">Equilíbrio e vitalidade</p>
+          <h3>Reiki</h3>
+          <p>Uma prática de cuidado energético para favorecer relaxamento, centramento e reorganização do seu campo.</p>
+          <b>Conhecer a sessão <span aria-hidden="true">↗</span></b>
+        </div>
+      </a>
+
+      <a class="catalog-card card-wide" href="metodo.html">
+        <div class="card-wide-copy">
+          <p class="card-type">Processo terapêutico autoral</p>
+          <h3>Solo Sagrado</h3>
+          <p>
+            Uma jornada para quem percebe que não quer apenas compreender o padrão, mas trabalhar suas raízes.
+            Uno investigação, práticas energéticas e integração para acompanhar transformações mais profundas.
+          </p>
+          <b>Conhecer a jornada <span aria-hidden="true">↗</span></b>
+        </div>
+        <img src="mesa-servico.jpg" alt="Instrumentos utilizados na jornada Solo Sagrado">
       </a>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<section class="library wrap" id="materiais">
-
-  <div class="section-title compact">
-    <span class="kicker">Alguns materiais gratuitos</span>
-    <h2>Separei dois presentes pra você.</h2>
-    <p>Escrevi esse material e to entregando gratuitamente aqui.</p>
-  </div>
-
-  <div class="library-grid">
-
-    <article class="material">
-      <img class="material-cover" src="capa-arquetipos.jpg"
-           alt="Capa do e-book Arquétipos — O Código Oculto da Sua Alma">
-      <div class="material-copy">
-        <small>E-book gratuito</small>
-        <h3>Arquétipos</h3>
-        <p>Entenda o que são arquétipos, para que servem e como ativar eles de acordo com seus objetivos.</p>
-        <div class="material-actions">
-          <a target="_blank" rel="noopener"
-             href="arquetipos-o-codigo-oculto-da-alma.pdf">Ler online</a>
-          <a class="download" href="arquetipos-o-codigo-oculto-da-alma.pdf"
-             download="Arquetipos_O_Codigo_Oculto_da_Alma_Rari_Favaro.pdf">Baixar PDF</a>
-        </div>
+  <section class="approach">
+    <div class="wrap approach-grid">
+      <div class="approach-title">
+        <p class="eyebrow">Minha forma de conduzir</p>
+        <h2>Espiritualidade com profundidade, cuidado e discernimento.</h2>
       </div>
-    </article>
 
-    <article class="material">
-      <img class="material-cover" src="capa-cuidados-magicos.jpg"
-           alt="Capa do e-book Cuidados Mágicos — Banhos, Rezas e a Medicina Viva das Ervas">
-      <div class="material-copy">
-        <small>E-book gratuito</small>
-        <h3>Cuidados Mágicos</h3>
-        <p>Aqui você entende a importância dos Banhos,das rezas, aplicando a medicina viva das ervas para cuidar do seu campo.</p>
-        <div class="material-actions">
-          <a target="_blank" rel="noopener"
-             href="cuidados-magicos-banhos-e-rezas.pdf">Ler online</a>
-          <a class="download" href="cuidados-magicos-banhos-e-rezas.pdf"
-             download="Cuidados_Magicos_Banhos_Rezas_Rari_Favaro.pdf">Baixar PDF</a>
-        </div>
+      <div class="approach-steps">
+        <article>
+          <span>01</span>
+          <div>
+            <h3>Olhar</h3>
+            <p>Começamos pelo que está vivo agora: sua questão, seu ciclo e aquilo que já não pode continuar sem nome.</p>
+          </div>
+        </article>
+        <article>
+          <span>02</span>
+          <div>
+            <h3>Compreender</h3>
+            <p>Investigamos padrões, símbolos e movimentos do campo para organizar o que antes parecia confuso.</p>
+          </div>
+        </article>
+        <article>
+          <span>03</span>
+          <div>
+            <h3>Transformar</h3>
+            <p>Quando o processo pede, trabalhamos harmonização e integração para sustentar novas escolhas na vida real.</p>
+          </div>
+        </article>
       </div>
-    </article>
-
-  </div>
-</section>
-
-<section class="faq wrap">
-  <div class="section-title compact">
-    <span class="kicker">Dúvidas</span>
-    <h2>Talvez você esteja querendo me perguntar isso</h2>
-  </div>
-
-  <div class="faq-list">
-
-    <details>
-      <summary>Rarí, qual é a diferença entre o Tarot, Mapa numerológico e a jornada do Solo Sagrado?</summary>
-      <p>Eu uso o Tarot quando você quer clareza sobre uma situação. O Mapa serve pra entender melhor sua estrutura, sua personalidade seus caminhos e os ciclos da vida. E a Jornada do Solo sagrado, é meu método terapêutico de transformação. Geralmente quando existe algo que você quer trabalhar de forma mais profunda no campo energético e nos seus padrões.</p>
-    </details>
-
-    <details>
-      <summary>Como funciona uma leitura particular comigo?</summary>
-      <p>Você entra na página do Tarot, vê direitinho qual tipo de consulta conversa com seu momento e me chama no WhatsApp. A gente organiza o atendimento e o horário certinnho. Perfuntas objetivas te entrego em até seis horas após a contratação.</p>
-    </details>
-
-    <details>
-      <summary>O que eu vou receber no Mapa numerológico Cabalístico?</summary>
-      <p>Eu monto seu mapa a partir do seu nome e da sua data de nascimento. Organizo os pontos principais da sua numerologia de forma clara. Na página do Mapa eu explico exatamente os tópicos que entra.</p>
-    </details>
-
-    <details>
-      <summary>O que você usa dentro da Jornada do Solo Sagrado?</summary>
-      <p>Geralmente utilizo gráficos radiestésicos, Reiki , apometria, Thetahealing e ferramentas de investigação de crenças. Não trato isso como serviços soltos. Eu escolho os recursos de acordo com o que aparece no processo, transmuto tudo na mesa radiônica e te conduzo numa meditação guiada.</p>
-    </details>
-
-    <details>
-      <summary>Eu preciso acreditar em espiritualidade?</summary>
-      <p>Não necessariamente. Você pode chegar por ela, pelo simbolismo, pela curiosidade ou pelo autoconhecimento. O importante é você se sentir à vontade com a experiência.</p>
-    </details>
-
-  </div>
-</section>
-
-<section class="about wrap">
-
-  <div class="about-photo">
-    <img src="rari-hero.jpg" alt="Rarí Fávaro">
-  </div>
-
-  <div class="about-copy">
-    <span class="kicker">Prazer, eu sou o Rarí</span>
-    <h2>Terapeuta holístico, tarólogo, numerólogo e mestre em Reiki, espiritualista e Sacerdote do caminho. Taurino até o tutano rs. Gosto de olhar para aquilo que está por trás do que a gente vive.</h2>
-
-    <p>
-      Meu trabalho foi se formando no encontro entre Tarot, Numerologia Cabalística,
-      práticas energéticas e investigação da consciência.
-    </p>
-
-    <p>
-      Eu comecei atendendo questões, ouvindo histórias e percebendo que muitas vezes
-      a pergunta que chega em minha mesa não é a questão inteira. Tem padrão, tem repetição,
-      tem medo, tem desejo, tem coisa antiga pedindo nome.
-    </p>
-
-    <p>
-      Por isso hoje eu trabalho de três formas. Com o Tarot, eu te ajudo a enxergar.
-      Com o numerologia, eu te ajudo a compreender a expressão correta do seu ser. E com a vivência do Solo Sagrado, eu entro com você
-      num processo mais profundo de transmutação e integração. Já acompanhei mais de Duas mil transformações unindo todos os meus atendimentos.
-    </p>
-
-    <p>
-      Se você chegou aqui pela live, seja muito bem-vindo. E se quiser ficar,
-      tem bastante coisa acontecendo por aqui.
-    </p>
-
-    <div class="socials">
-      <a target="_blank" href="https://wa.me/5521975003419">WhatsApp</a>
-      <a target="_blank" href="https://instagram.com/rarifavaro.co">@rarifavaro.co</a>
-      <a target="_blank" href="https://www.tiktok.com/@rarifavaro">TikTok</a>
     </div>
-  </div>
+  </section>
 
-</section>
+  <section class="about wrap" id="sobre">
+    <div class="about-photo">
+      <img src="rari-hero.jpg" alt="Retrato de Rarí Fávaro">
+      <span>Rarí Fávaro</span>
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow dark">Sobre mim</p>
+      <h2>Eu observo o que está por trás daquilo que a gente vive.</h2>
+      <p>
+        Sou tarólogo, numerólogo, reikiano e terapeuta holístico. Meu trabalho nasceu da escuta de muitas histórias
+        e da percepção de que, quase sempre, a pergunta que chega à mesa é apenas a primeira camada.
+      </p>
+      <p>
+        Por trás dela podem existir padrões, repetições, medos, desejos e movimentos antigos pedindo consciência.
+        Por isso, reúno ferramentas simbólicas e energéticas sem tratar todo mundo da mesma forma: cada processo
+        é conduzido a partir do momento e da necessidade de quem chega.
+      </p>
+      <blockquote>“Não se trata de prever uma vida pronta. Trata-se de enxergar melhor para escolher diferente.”</blockquote>
+
+      <div class="social-links" aria-label="Redes sociais de Rarí Fávaro">
+        <a target="_blank" rel="noopener" href="https://instagram.com/rarifavaro.co">Instagram <span>↗</span></a>
+        <a target="_blank" rel="noopener" href="https://www.tiktok.com/@rarifavaro">TikTok <span>↗</span></a>
+        <a target="_blank" rel="noopener" href="https://wa.me/5521975003419">WhatsApp <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="community" id="sementes">
+    <div class="wrap community-grid">
+      <div class="community-copy">
+        <p class="eyebrow">Comunidade Sementes</p>
+        <h2>Um espaço vivo para cultivar consciência em comunidade.</h2>
+        <p>
+          No Sementes eu compartilho reflexões, vídeos, práticas, Tarot, radiestesia, envios coletivos de Reiki
+          e experiências de cuidado energético. Sem uma rotina engessada: as partilhas acompanham o que está vivo no grupo.
+        </p>
+        <a class="button button-copper" target="_blank" rel="noopener"
+           href="https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&amp;p=i&amp;mlu=4&amp;amv=1">
+          Entrar na comunidade
+        </a>
+      </div>
+
+      <div class="community-card">
+        <div class="community-symbol" aria-hidden="true">✦</div>
+        <p>Por dentro do Sementes</p>
+        <ul>
+          <li><span>01</span> Conteúdos sobre consciência e espiritualidade</li>
+          <li><span>02</span> Práticas e ativações energéticas coletivas</li>
+          <li><span>03</span> Tarot, radiestesia e reflexões para a vida real</li>
+          <li><span>04</span> Avisos de lives, novidades e condições especiais</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="library wrap" id="materiais">
+    <div class="section-heading split-heading">
+      <div>
+        <p class="eyebrow dark">Biblioteca gratuita</p>
+        <h2>Conteúdos para continuar sua jornada.</h2>
+      </div>
+      <p>Materiais autorais para você estudar, praticar e aprofundar sua relação com o simbólico e o energético.</p>
+    </div>
+
+    <div class="library-grid">
+      <article class="material">
+        <img src="capa-arquetipos.jpg" alt="Capa do e-book Arquétipos — O Código Oculto da Sua Alma">
+        <div>
+          <p class="card-type">E-book gratuito</p>
+          <h3>Arquétipos</h3>
+          <p>Entenda a linguagem dos arquétipos e como trabalhar essas forças simbólicas de forma consciente.</p>
+          <div class="material-actions">
+            <a target="_blank" rel="noopener" href="arquetipos-o-codigo-oculto-da-alma.pdf">Ler online</a>
+            <a href="arquetipos-o-codigo-oculto-da-alma.pdf" download="Arquetipos_O_Codigo_Oculto_da_Alma_Rari_Favaro.pdf">Baixar PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="material">
+        <img src="capa-cuidados-magicos.jpg" alt="Capa do e-book Cuidados Mágicos — Banhos, Rezas e a Medicina Viva das Ervas">
+        <div>
+          <p class="card-type">E-book gratuito</p>
+          <h3>Cuidados Mágicos</h3>
+          <p>Banhos, rezas e a medicina viva das ervas como práticas de cuidado, presença e conexão.</p>
+          <div class="material-actions">
+            <a target="_blank" rel="noopener" href="cuidados-magicos-banhos-e-rezas.pdf">Ler online</a>
+            <a href="cuidados-magicos-banhos-e-rezas.pdf" download="Cuidados_Magicos_Banhos_Rezas_Rari_Favaro.pdf">Baixar PDF</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="faq wrap" id="duvidas">
+    <div class="section-heading faq-heading">
+      <p class="eyebrow dark">Dúvidas frequentes</p>
+      <h2>Antes de escolher seu atendimento.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Como saber qual atendimento é o melhor para mim?</summary>
+        <p>O Tarot é indicado quando você busca clareza sobre uma situação. A Numerologia aprofunda sua estrutura, seus ciclos e potenciais. Radiestesia e Reiki trabalham o campo energético. O Solo Sagrado é um processo mais amplo para questões que pedem investigação e acompanhamento. Se ainda estiver em dúvida, me chame no WhatsApp.</p>
+      </details>
+      <details>
+        <summary>Os atendimentos são online?</summary>
+        <p>Sim. Os atendimentos podem ser realizados à distância, com a organização e a forma de entrega explicadas na página de cada serviço.</p>
+      </details>
+      <details>
+        <summary>Seu trabalho substitui acompanhamento médico ou psicológico?</summary>
+        <p>Não. Meu trabalho atua como uma prática integrativa de autoconhecimento e cuidado energético. Ele não substitui diagnóstico, tratamento médico, psicológico ou psiquiátrico.</p>
+      </details>
+      <details>
+        <summary>Preciso ter uma crença espiritual específica?</summary>
+        <p>Não. Você pode chegar pela espiritualidade, pelo simbolismo, pela curiosidade ou pelo desejo de se conhecer melhor. O essencial é sentir abertura para a experiência.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap final-cta-inner">
+      <div>
+        <p class="eyebrow">Seu próximo movimento</p>
+        <h2>Se algo dentro de você reconheceu esse caminho, vamos conversar.</h2>
+      </div>
+      <a class="button button-light" target="_blank" rel="noopener"
+         href="https://wa.me/5521975003419?text=Oi%2C%20Rar%C3%AD%21%20Conheci%20seu%20trabalho%20pelo%20site%20e%20quero%20entender%20qual%20atendimento%20%C3%A9%20mais%20indicado%20para%20mim.">
+        Falar com o Rarí
+      </a>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-  <div class="wrap">
-    <strong>Rarí Fávaro</strong>
-    <span>rarifavaro.com.br</span>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <strong>Rarí Fávaro</strong>
+      <p>Tarot, Numerologia Cabalística e Terapias Integrativas.</p>
+    </div>
+    <div>
+      <span>Navegue</span>
+      <a href="#atendimentos">Atendimentos</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#sementes">Sementes</a>
+    </div>
+    <div>
+      <span>Conecte-se</span>
+      <a target="_blank" rel="noopener" href="https://instagram.com/rarifavaro.co">Instagram</a>
+      <a target="_blank" rel="noopener" href="https://www.tiktok.com/@rarifavaro">TikTok</a>
+      <a target="_blank" rel="noopener" href="https://wa.me/5521975003419">WhatsApp</a>
+    </div>
+    <div class="footer-site">
+      <span>Site oficial</span>
+      <p>rarifavaro.com.br</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Rarí Fávaro</span>
+    <span>Espiritualidade com profundidade e os pés no chão.</span>
   </div>
 </footer>
 
-<div class="mobile-bar">
-  <a href="https://www.tiktok.com/@rarifavaro/live">Live</a>
-  <a href="#servicos">Serviços</a>
-  <a target="_blank" href="https://wa.me/5521975003419">WhatsApp</a>
-</div>
+<nav class="mobile-bar" aria-label="Atalhos no celular">
+  <a href="#atendimentos">Atendimentos</a>
+  <a href="#sementes">Sementes</a>
+  <a target="_blank" rel="noopener" href="https://wa.me/5521975003419">Agendar</a>
+</nav>
 
-<div class="toast" id="toast"></div>
-<script src="script.js"></script>
 </body>
 </html>

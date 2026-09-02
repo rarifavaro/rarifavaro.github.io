@@ -1,23 +1,23 @@
-# Site Rarí Fávaro — versão focada em venda
+# Site Rarí Fávaro — catálogo profissional
+
+A página inicial apresenta o posicionamento profissional de Rarí Fávaro e organiza o catálogo de atendimentos.
 
 Fluxo principal:
-TikTok Live → escolher 1/2/3 perguntas → copiar PIX → WhatsApp → serviços pagos.
+posicionamento → catálogo → página do serviço → contato pelo WhatsApp.
 
-PIX: (21) 97500-3419
-WhatsApp: (21) 97500-3419
+Atendimentos apresentados:
+- Tarot
+- Numerologia Cabalística
+- Tratamento Radiestésico
+- Reiki
+- Solo Sagrado
 
-Esta versão NÃO possui mini mapa gratuito.
+A comunidade Sementes, os materiais gratuitos e as redes sociais aparecem como formas de aprofundar a conexão com o trabalho. A antiga seção de perguntas e pagamento da live foi removida da página inicial.
 
 Páginas:
-- index.html
-- tarot.html
-- numerologia.html
-- reiki.html
-- mesa.html
-
-Os preços explícitos da live são:
-- 1 pergunta R$10
-- 2 perguntas R$15
-- 3 perguntas R$22
-
-As páginas de serviços particulares estão estruturadas para contratação via WhatsApp.
+- `index.html` — página inicial e catálogo
+- `tarot.html` — consultas de Tarot
+- `numerologia.html` — Mapa Numerológico Cabalístico
+- `mesa.html` — tratamento radiestésico
+- `reiki.html` — Reiki
+- `metodo.html` — Solo Sagrado
