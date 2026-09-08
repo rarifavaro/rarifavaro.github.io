@@ -1,23 +1,21 @@
-# Site Rarí Fávaro — catálogo profissional
+# Rarí Fávaro — Tarot & Método Solo Sagrado
 
-A página inicial apresenta o posicionamento profissional de Rarí Fávaro e organiza o catálogo de atendimentos.
+Site estático responsivo com dois caminhos de atendimento:
 
-Fluxo principal:
-posicionamento → catálogo → página do serviço → contato pelo WhatsApp.
+- Consulta de Tarot: 50 minutos por vídeo, R$ 147.
+- Método Solo Sagrado: processos individuais de 1, 3 ou 7 dias.
 
-Atendimentos apresentados:
-- Tarot
-- Numerologia Cabalística
-- Tratamento Radiestésico
-- Reiki
-- Solo Sagrado
+A página do método inclui um Mapa Inicial interativo com exatamente sete perguntas, resultado reflexivo por eixo e contato contextualizado pelo WhatsApp.
 
-A comunidade Sementes, os materiais gratuitos e as redes sociais aparecem como formas de aprofundar a conexão com o trabalho. A antiga seção de perguntas e pagamento da live foi removida da página inicial.
+Numerologia, Reiki e Mesa Radiônica não aparecem como serviços independentes. URLs antigas encaminham para a arquitetura atual para evitar links quebrados.
 
-Páginas:
-- `index.html` — página inicial e catálogo
-- `tarot.html` — consultas de Tarot
-- `numerologia.html` — Mapa Numerológico Cabalístico
-- `mesa.html` — tratamento radiestésico
-- `reiki.html` — Reiki
-- `metodo.html` — Solo Sagrado
+## Arquivos ativos
+
+- `index.html`
+- `tarot.html`
+- `metodo.html`
+- `style-v2.css`
+- `rari-hero.jpg`
+- `tarot-autoral-v2.png`
+- `solo-sagrado-autoral-v2.png`
+- capas e PDFs dos conteúdos gratuitos

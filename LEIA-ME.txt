@@ -1,19 +1,22 @@
-RARÍ FÁVARO — CATÁLOGO PROFISSIONAL
+RARÍ FÁVARO — TAROT & MÉTODO SOLO SAGRADO
 
-Arquivos deste pacote:
-- index.html → home profissional e catálogo de atendimentos
-- style.css → identidade visual responsiva para computador e celular
-- tarot.html, numerologia.html, mesa.html, reiki.html e metodo.html → páginas dos atendimentos
-- capas e PDFs → materiais gratuitos da biblioteca
+ARQUIVOS PRINCIPAIS
+- index.html → página inicial com apenas Tarot e Solo Sagrado
+- tarot.html → consulta única de 50 minutos por R$ 147
+- metodo.html → método, 3 travessias e Mapa Inicial de 7 perguntas
+- style-v2.css → identidade visual e responsividade
+- tarot-autoral-v2.png → imagem autoral do Tarot
+- solo-sagrado-autoral-v2.png → imagem autoral do Solo Sagrado
+
+ESTRUTURA DO SOLO SAGRADO
+- O Portal: 1 dia, R$ 197
+- A Travessia: 3 dias, R$ 297
+- Solo Sagrado: 7 dias, R$ 597
 
 IMPORTANTE
-1. NÃO apague sua foto atual rari-hero.jpg do repositório.
-   A nova home usa exatamente esse arquivo para preservar sua foto real.
-2. Mantenha todas as páginas de atendimento, porque os cards do catálogo apontam para elas.
-3. Antes de substituir, salve uma cópia dos arquivos atuais.
-4. O arquivo CNAME preserva o domínio rarifavaro.com.br.
-5. Os botões dos livros abrem e baixam os PDFs que já estão no pacote.
-6. O botão Sementes usa o convite:
-   https://chat.whatsapp.com/Hn1f6aiO0sG3XBsy8JsAQ9?s=cl&p=i&mlu=4&amv=1
-
-A antiga área de perguntas e pagamento da live foi removida da página inicial.
+1. Publique todos os arquivos e mantenha a mesma estrutura de pastas.
+2. O arquivo CNAME preserva o domínio rarifavaro.com.br.
+3. numerologia.html, reiki.html e mesa.html agora apenas encaminham visitantes antigos para os atendimentos atuais.
+4. Os e-books e o convite da comunidade Sementes foram preservados.
+5. WhatsApp usado nos botões: (21) 97500-3419.
+6. Antes de trocar os arquivos do site atual, mantenha uma cópia da versão publicada.
